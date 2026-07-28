@@ -6,1166 +6,1134 @@
 <meta name="robots" content="noindex,nofollow">
 <title>South Shore Foam LLC — Foundation, Concrete & Insulation Solutions in Rockford, MN</title>
 <style>
-  :root {
-    --color-primary: #1a3a5c;
-    --color-primary-dark: #0f2440;
-    --color-accent: #e8792f;
-    --color-accent-hover: #d4681f;
-    --color-light: #f5f7fa;
-    --color-white: #ffffff;
-    --color-dark: #1a1a2e;
-    --color-text: #3a3a4a;
-    --color-text-light: #6b7280;
-    --color-border: #e2e6ec;
-    --color-star: #f59e0b;
-    --color-success: #10b981;
-    --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    --radius: 12px;
-    --radius-sm: 8px;
-    --shadow: 0 4px 24px rgba(0,0,0,0.08);
-    --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
-    --max-width: 1200px;
-    --header-height: 72px;
-  }
+:root {
+  --color-primary: #1a3a5c;
+  --color-primary-dark: #0f2640;
+  --color-accent: #e8a624;
+  --color-accent-hover: #d4941a;
+  --color-bg: #f7f8fa;
+  --color-white: #ffffff;
+  --color-text: #2c3e50;
+  --color-text-light: #5a6a7a;
+  --color-border: #e1e5eb;
+  --color-success: #27ae60;
+  --color-hero-gradient: linear-gradient(135deg, #1a3a5c 0%, #2c5f8a 60%, #3a7ab5 100%);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
+  --shadow-lg: 0 16px 50px rgba(0,0,0,0.18);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --max-width: 1200px;
+  --header-height: 64px;
+}
 
-  *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  html {
-    scroll-behavior: smooth;
-    -webkit-text-size-adjust: 100%;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  body {
-    font-family: var(--font-main);
-    color: var(--color-text);
-    line-height: 1.6;
-    background: var(--color-white);
-    overflow-x: hidden;
-  }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
 
-  /* Fluid Typography */
-  h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
-  h2 { font-size: clamp(1.6rem, 3.5vw, 2.5rem); }
-  h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
-  p, li { font-size: clamp(0.95rem, 1.5vw, 1.1rem); }
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
 
-  a { text-decoration: none; color: inherit; }
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 32px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 clamp(1rem, 4vw, 2.5rem);
-  }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--color-primary);
+}
 
-  /* ===== STICKY HEADER ===== */
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: rgba(255,255,255,0.97);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--color-border);
-    height: var(--header-height);
-    display: flex;
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--color-primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.logo-text span {
+  display: block;
+  font-size: 0.65em;
+  font-weight: 500;
+  color: var(--color-text-light);
+  letter-spacing: 0.02em;
+}
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.header-phone:hover {
+  background: var(--color-primary-dark);
+}
+
+.header-phone svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* HERO */
+.hero {
+  background: var(--color-hero-gradient);
+  position: relative;
+  overflow: hidden;
+  padding: clamp(40px, 6vw, 80px) 0 clamp(48px, 8vw, 100px);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(232,166,36,0.12) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 32px);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 48px;
     align-items: center;
   }
+}
 
-  .header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 clamp(1rem, 4vw, 2.5rem);
-  }
+.hero-content {
+  color: var(--color-white);
+}
 
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 800;
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
-    color: var(--color-primary);
-    letter-spacing: -0.02em;
-  }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(232,166,36,0.2);
+  border: 1px solid rgba(232,166,36,0.4);
+  color: var(--color-accent);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 20px;
+}
 
-  .logo-icon {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
+.hero-h1 {
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 16px;
+}
 
-  .header-nav {
-    display: flex;
-    align-items: center;
-    gap: clamp(1rem, 3vw, 2rem);
-  }
+.hero-h1 em {
+  font-style: normal;
+  color: var(--color-accent);
+}
 
-  .header-nav a.nav-link {
-    color: var(--color-text);
-    font-size: 0.92rem;
-    font-weight: 500;
-    transition: color 0.2s;
-    display: none;
-  }
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: rgba(255,255,255,0.82);
+  margin-bottom: 24px;
+  max-width: 520px;
+  line-height: 1.55;
+}
 
-  .header-nav a.nav-link:hover {
-    color: var(--color-accent);
-  }
+.hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
 
-  @media (min-width: 768px) {
-    .header-nav a.nav-link {
-      display: inline;
-    }
-  }
+.hero-stars {
+  display: flex;
+  gap: 2px;
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
 
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: all 0.25s ease;
-    cursor: pointer;
-    border: none;
-    white-space: nowrap;
-  }
+.hero-rating-text {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+}
 
-  .btn-primary {
-    background: var(--color-accent);
-    color: var(--color-white);
-    box-shadow: 0 4px 16px rgba(232, 121, 47, 0.3);
-  }
+.hero-rating-text strong {
+  color: var(--color-white);
+}
 
-  .btn-primary:hover {
-    background: var(--color-accent-hover);
-    transform: translateY(-1px);
-    box-shadow: 0 6px 24px rgba(232, 121, 47, 0.4);
-  }
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-accent);
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 20px rgba(232,166,36,0.35);
+}
 
-  .btn-outline {
-    background: transparent;
-    color: var(--color-white);
-    border: 2px solid rgba(255,255,255,0.5);
-  }
+.hero-cta:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-1px);
+}
 
-  .btn-outline:hover {
-    background: rgba(255,255,255,0.12);
-    border-color: var(--color-white);
-  }
+.hero-cta svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 
-  .btn-secondary {
-    background: var(--color-primary);
-    color: var(--color-white);
-  }
+/* LEAD FORM */
+.form-card {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: clamp(28px, 4vw, 40px);
+  position: relative;
+}
 
-  .btn-secondary:hover {
-    background: var(--color-primary-dark);
-    transform: translateY(-1px);
-  }
+.form-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent), #f0c040);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
 
-  .btn-sm {
-    padding: 10px 20px;
-    font-size: 0.88rem;
-  }
+.form-card h2 {
+  color: var(--color-primary);
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
 
-  /* ===== HERO ===== */
-  .hero {
-    position: relative;
-    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, #2a5a8c 100%);
-    color: var(--color-white);
-    padding: clamp(4rem, 10vw, 8rem) 0 clamp(4rem, 10vw, 7rem);
-    overflow: hidden;
-  }
+.form-card .form-subtitle {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
 
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 700px;
-    height: 700px;
-    background: radial-gradient(circle, rgba(232,121,47,0.15) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-  }
+.form-group {
+  margin-bottom: 16px;
+}
 
-  .hero::after {
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    left: -10%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-  }
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
 
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 700px;
-  }
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--color-text);
+  transition: border-color 0.2s;
+  background: var(--color-bg);
+}
 
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,255,255,0.2);
-    padding: 6px 16px;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-    backdrop-filter: blur(8px);
-  }
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: var(--color-white);
+}
 
-  .hero h1 {
-    font-weight: 800;
-    line-height: 1.15;
-    margin-bottom: 1.25rem;
-    letter-spacing: -0.02em;
-  }
+.form-group input::placeholder {
+  color: #a0aab4;
+}
 
-  .hero h1 span {
-    color: var(--color-accent);
-  }
+.form-submit {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  margin-top: 8px;
+  font-family: inherit;
+}
 
-  .hero p {
-    font-size: clamp(1.05rem, 2vw, 1.25rem);
-    color: rgba(255,255,255,0.85);
-    margin-bottom: 2rem;
-    max-width: 580px;
-    line-height: 1.7;
-  }
+.form-submit:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
 
-  .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-  }
+.form-note {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+  margin-top: 12px;
+}
 
-  .hero-stats {
-    display: flex;
-    gap: clamp(1.5rem, 4vw, 3rem);
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.15);
-    flex-wrap: wrap;
-  }
+.form-note svg {
+  width: 12px;
+  height: 12px;
+  fill: var(--color-text-light);
+  vertical-align: -1px;
+  margin-right: 3px;
+}
 
-  .hero-stat strong {
-    display: block;
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 800;
-    color: var(--color-accent);
-  }
+.form-success {
+  text-align: center;
+  padding: 40px 20px;
+}
 
-  .hero-stat span {
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.7);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 500;
-  }
+.form-success .check-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(39,174,96,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
 
-  /* Decorative Shapes */
-  .hero-shape {
-    position: absolute;
-    z-index: 1;
-    opacity: 0.06;
-  }
+.form-success .check-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--color-success);
+}
 
-  .hero-shape-1 {
-    top: 10%;
-    right: 5%;
-    width: 250px;
-    height: 250px;
-    border: 40px solid white;
-    border-radius: 50%;
-  }
+.form-success h3 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
 
-  .hero-shape-2 {
-    bottom: 15%;
-    right: 15%;
-    width: 120px;
-    height: 120px;
-    background: white;
-    border-radius: var(--radius);
-    transform: rotate(45deg);
-  }
+.form-success p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
 
-  @media (max-width: 767px) {
-    .hero-shape { display: none; }
-  }
+/* SECTIONS SHARED */
+.section {
+  padding: clamp(48px, 8vw, 96px) 0;
+}
 
-  /* ===== TRUST BAR ===== */
-  .trust-bar {
-    background: var(--color-white);
-    padding: clamp(2rem, 4vw, 3rem) 0;
-    border-bottom: 1px solid var(--color-border);
-  }
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 32px);
+}
 
-  .trust-bar-inner {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(1.5rem, 4vw, 3rem);
-  }
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
 
-  .trust-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 20px;
-    background: var(--color-light);
-    border-radius: var(--radius);
-    border: 1px solid var(--color-border);
-  }
+.section-label::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 3px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
 
-  .trust-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-size: 1.2rem;
-  }
+.section-title {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
 
-  .trust-icon-google {
-    background: #fff;
-    border: 2px solid #e2e6ec;
-  }
+.section-desc {
+  color: var(--color-text-light);
+  font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+  max-width: 620px;
+  margin-bottom: 40px;
+  line-height: 1.65;
+}
 
-  .trust-icon-family {
-    background: linear-gradient(135deg, var(--color-primary), #2a5a8c);
-    color: white;
-  }
+/* SERVICES */
+.services-section {
+  background: var(--color-white);
+}
 
-  .trust-icon-honest {
-    background: linear-gradient(135deg, var(--color-success), #059669);
-    color: white;
-  }
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
 
-  .trust-text strong {
-    display: block;
-    font-size: 0.95rem;
-    color: var(--color-dark);
-  }
-
-  .trust-text span {
-    font-size: 0.82rem;
-    color: var(--color-text-light);
-  }
-
-  .stars {
-    color: var(--color-star);
-    letter-spacing: 2px;
-    font-size: 1rem;
-  }
-
-  /* ===== SECTIONS ===== */
-  section {
-    padding: clamp(3rem, 8vw, 6rem) 0;
-  }
-
-  .section-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--color-accent);
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.75rem;
-  }
-
-  .section-label::before {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 2px;
-    background: var(--color-accent);
-  }
-
-  .section-title {
-    color: var(--color-dark);
-    font-weight: 800;
-    margin-bottom: 1rem;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-  }
-
-  .section-desc {
-    color: var(--color-text-light);
-    max-width: 600px;
-    margin-bottom: 2.5rem;
-    line-height: 1.7;
-  }
-
-  .section-center {
-    text-align: center;
-  }
-
-  .section-center .section-desc {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* ===== SERVICES ===== */
-  .services-section {
-    background: var(--color-light);
-  }
-
+@media (min-width: 540px) {
   .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
-    gap: clamp(1rem, 2vw, 1.5rem);
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .service-card {
-    background: var(--color-white);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius);
-    padding: clamp(1.5rem, 3vw, 2rem);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+@media (min-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  .service-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: rgba(232, 121, 47, 0.3);
+.service-card {
+  background: var(--color-bg);
+  border-radius: var(--radius);
+  padding: clamp(24px, 3vw, 32px);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border);
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--color-primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.service-icon svg {
+  width: 26px;
+  height: 26px;
+  fill: var(--color-white);
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* TRUST BAR */
+.trust-section {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .trust-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  .service-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
+.trust-item {
+  padding: 20px;
+}
 
-  .service-card:hover::after {
-    opacity: 1;
-  }
+.trust-number {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
 
-  .service-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.25rem;
-    font-size: 1.5rem;
-  }
+.trust-label {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.85);
+  font-weight: 500;
+}
 
-  .service-icon-concrete { background: linear-gradient(135deg, #fde68a, #f59e0b); }
-  .service-icon-foundation { background: linear-gradient(135deg, #93c5fd, #3b82f6); }
-  .service-icon-raising { background: linear-gradient(135deg, #a5f3fc, #06b6d4); }
-  .service-icon-ground { background: linear-gradient(135deg, #bbf7d0, #22c55e); }
-  .service-icon-foam { background: linear-gradient(135deg, #fdba74, var(--color-accent)); }
-  .service-icon-coatings { background: linear-gradient(135deg, #c4b5fd, #8b5cf6); }
+.trust-stars {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
 
-  .service-card h3 {
-    color: var(--color-dark);
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-  }
+/* WHY US */
+.why-section {
+  background: var(--color-bg);
+}
 
-  .service-card p {
-    color: var(--color-text-light);
-    font-size: 0.92rem;
-    line-height: 1.65;
-    margin-bottom: 1.25rem;
-  }
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
 
-  .service-link {
-    color: var(--color-accent);
-    font-weight: 600;
-    font-size: 0.9rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    transition: gap 0.2s;
-  }
-
-  .service-link:hover {
-    gap: 10px;
-  }
-
-  /* ===== WHY CHOOSE US ===== */
+@media (min-width: 700px) {
   .why-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-    gap: clamp(1.5rem, 3vw, 2rem);
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .why-card {
-    padding: clamp(1.5rem, 3vw, 2rem);
-    border-radius: var(--radius);
-    background: var(--color-light);
-    border: 1px solid var(--color-border);
-    text-align: center;
+.why-card {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: clamp(24px, 3vw, 32px);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  box-shadow: var(--shadow-sm);
+}
+
+.why-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: rgba(26,58,92,0.08);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: var(--color-primary);
+}
+
+.why-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+
+.why-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* SERVICE AREA */
+.area-section {
+  background: var(--color-white);
+}
+
+.area-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .area-content {
+    grid-template-columns: 1fr 1fr;
   }
+}
 
-  .why-card-icon {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    margin: 0 auto 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.6rem;
-  }
+.area-map-placeholder {
+  background: linear-gradient(135deg, #e8ecf1 0%, #d5dce4 100%);
+  border-radius: var(--radius);
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  gap: 12px;
+}
 
-  .why-card-icon-results { background: linear-gradient(135deg, rgba(16,185,129,0.12), rgba(16,185,129,0.2)); }
-  .why-card-icon-honest { background: linear-gradient(135deg, rgba(59,130,246,0.12), rgba(59,130,246,0.2)); }
-  .why-card-icon-family { background: linear-gradient(135deg, rgba(232,121,47,0.12), rgba(232,121,47,0.2)); }
+.area-map-placeholder svg {
+  width: 48px;
+  height: 48px;
+  fill: var(--color-primary);
+  opacity: 0.5;
+}
 
-  .why-card h3 {
-    color: var(--color-dark);
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
+.area-map-placeholder span {
+  font-weight: 600;
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
 
-  .why-card p {
-    color: var(--color-text-light);
-    font-size: 0.92rem;
-    line-height: 1.65;
-  }
+.area-text h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
 
-  /* ===== SERVICE AREA ===== */
-  .area-section {
-    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
-    color: var(--color-white);
-    position: relative;
-    overflow: hidden;
-  }
+.area-text p {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
 
-  .area-section::before {
-    content: '';
-    position: absolute;
-    top: -100px;
-    right: -100px;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(232,121,47,0.1) 0%, transparent 70%);
-    border-radius: 50%;
-  }
+.area-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
 
-  .area-inner {
-    display: flex;
-    align-items: center;
-    gap: clamp(2rem, 5vw, 4rem);
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
-  }
+.area-address svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
 
-  .area-text {
-    flex: 1;
-    min-width: 280px;
-  }
+/* CONTACT / CTA */
+.contact-section {
+  background: var(--color-hero-gradient);
+  color: var(--color-white);
+  text-align: center;
+}
 
-  .area-text .section-label {
-    color: rgba(255,255,255,0.7);
-  }
+.contact-section .section-label {
+  color: var(--color-accent);
+}
 
-  .area-text .section-label::before {
-    background: rgba(255,255,255,0.5);
-  }
+.contact-section .section-label::before {
+  background: var(--color-accent);
+}
 
-  .area-text .section-title {
-    color: var(--color-white);
-  }
+.contact-section .section-title {
+  color: var(--color-white);
+}
 
-  .area-text p {
-    color: rgba(255,255,255,0.8);
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-  }
+.contact-section .section-desc {
+  color: rgba(255,255,255,0.82);
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .area-map {
-    flex: 1;
-    min-width: 280px;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: var(--radius);
-    padding: clamp(2rem, 4vw, 3rem);
-    text-align: center;
-  }
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 8px;
+}
 
-  .area-pin {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    display: block;
-  }
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
-  .area-map h3 {
-    color: var(--color-white);
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-  }
+.contact-btn:hover {
+  transform: translateY(-2px);
+}
 
-  .area-map p {
-    color: rgba(255,255,255,0.7);
-    font-size: 0.92rem;
-  }
+.contact-btn-primary {
+  background: var(--color-accent);
+  color: var(--color-primary-dark);
+  box-shadow: 0 4px 20px rgba(232,166,36,0.35);
+}
 
-  .area-address {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.12);
-    font-size: 0.9rem;
-    color: rgba(255,255,255,0.6);
-  }
+.contact-btn-secondary {
+  background: rgba(255,255,255,0.15);
+  color: var(--color-white);
+  border: 2px solid rgba(255,255,255,0.3);
+}
 
-  /* ===== QUOTE / SCRIPTURE ===== */
-  .quote-section {
-    background: var(--color-light);
-    text-align: center;
-    padding: clamp(2.5rem, 6vw, 4rem) 0;
-  }
+.contact-btn-secondary:hover {
+  background: rgba(255,255,255,0.25);
+}
 
-  .quote-section blockquote {
-    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-    font-style: italic;
-    color: var(--color-text);
-    max-width: 650px;
-    margin: 0 auto;
-    line-height: 1.7;
-    position: relative;
-  }
+.contact-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 
-  .quote-section blockquote::before {
-    content: '"';
-    font-size: 4rem;
-    color: var(--color-accent);
-    opacity: 0.3;
-    position: absolute;
-    top: -1.5rem;
-    left: -0.5rem;
-    font-family: Georgia, serif;
-    line-height: 1;
-  }
+/* FOOTER */
+.footer {
+  background: var(--color-primary-dark);
+  color: rgba(255,255,255,0.7);
+  padding: 40px 0 28px;
+}
 
-  .quote-section cite {
-    display: block;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    font-style: normal;
-    color: var(--color-text-light);
-    font-weight: 600;
-  }
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 32px);
+}
 
-  /* ===== CONTACT ===== */
-  .contact-section {
-    background: var(--color-white);
-  }
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+}
 
-  .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
-    gap: clamp(1.5rem, 3vw, 2.5rem);
-  }
+.footer-brand .logo {
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
 
-  .contact-info-card {
-    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
-    color: var(--color-white);
-    border-radius: var(--radius);
-    padding: clamp(2rem, 4vw, 3rem);
-    position: relative;
-    overflow: hidden;
-  }
+.footer-brand .logo-icon {
+  background: rgba(255,255,255,0.12);
+}
 
-  .contact-info-card::before {
-    content: '';
-    position: absolute;
-    bottom: -50px;
-    right: -50px;
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle, rgba(232,121,47,0.15) 0%, transparent 70%);
-    border-radius: 50%;
-  }
+.footer-brand p {
+  font-size: 0.88rem;
+  max-width: 320px;
+  line-height: 1.6;
+}
 
-  .contact-info-card h3 {
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    font-size: clamp(1.3rem, 2.5vw, 1.6rem);
-    position: relative;
-  }
+.footer-contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  .contact-info-card > p {
-    color: rgba(255,255,255,0.75);
-    font-size: 0.95rem;
-    margin-bottom: 2rem;
-    position: relative;
-  }
+.footer-contact-list a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
 
-  .contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    margin-bottom: 1.5rem;
-    position: relative;
-  }
+.footer-contact-list a:hover {
+  color: var(--color-accent);
+}
 
-  .contact-item-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-size: 1.1rem;
-  }
+.footer-contact-list svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
 
-  .contact-item-text strong {
-    display: block;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: rgba(255,255,255,0.6);
-    margin-bottom: 2px;
-  }
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 20px;
+}
 
-  .contact-item-text a,
-  .contact-item-text span {
-    color: var(--color-white);
-    font-size: 1rem;
-    font-weight: 500;
-  }
-
-  .contact-item-text a:hover {
-    color: var(--color-accent);
-  }
-
-  .contact-cta-card {
-    background: var(--color-light);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius);
-    padding: clamp(2rem, 4vw, 3rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .contact-cta-card h3 {
-    color: var(--color-dark);
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  }
-
-  .contact-cta-card p {
-    color: var(--color-text-light);
-    margin-bottom: 2rem;
-    max-width: 400px;
-    line-height: 1.65;
-    font-size: 0.95rem;
-  }
-
-  .contact-cta-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .contact-cta-buttons .btn {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .btn-email {
-    background: var(--color-light);
-    color: var(--color-primary);
-    border: 2px solid var(--color-primary);
-  }
-
-  .btn-email:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
-  }
-
-  /* ===== FOOTER ===== */
-  footer {
-    background: var(--color-dark);
-    color: rgba(255,255,255,0.6);
-    text-align: center;
-    padding: clamp(2rem, 4vw, 3rem) 0;
-    font-size: 0.85rem;
-  }
-
-  footer .footer-brand {
-    color: var(--color-white);
-    font-weight: 700;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    display: block;
-  }
-
-  footer a {
-    color: var(--color-accent);
-    transition: opacity 0.2s;
-  }
-
-  footer a:hover {
-    opacity: 0.8;
-  }
-
-  .footer-divider {
-    width: 40px;
-    height: 2px;
-    background: var(--color-accent);
-    margin: 1rem auto;
-    opacity: 0.5;
-  }
-
-  /* ===== UTILITY ===== */
-  .phone-icon-svg {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  @media (max-width: 480px) {
-    .hero-actions {
-      flex-direction: column;
-    }
-    .hero-actions .btn {
-      justify-content: center;
-    }
-    .trust-bar-inner {
-      flex-direction: column;
-      align-items: stretch;
-    }
-  }
+.footer-bottom {
+  text-align: center;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.45);
+}
 </style>
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
-<header>
+<!-- HEADER -->
+<header class="header">
   <div class="header-inner">
-    <a href="#" class="logo">
+    <a href="#" class="logo" aria-label="South Shore Foam Home">
       <div class="logo-icon">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
       </div>
-      South Shore Foam
+      <div class="logo-text">
+        South Shore Foam
+        <span>LLC</span>
+      </div>
     </a>
-    <nav class="header-nav">
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#why" class="nav-link">Why Us</a>
-      <a href="#area" class="nav-link">Service Area</a>
-      <a href="#contact" class="nav-link">Contact</a>
-      <a href="tel:+16128761200" class="btn btn-primary btn-sm">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        Call Now
-      </a>
-    </nav>
+    <a href="tel:+16128761200" class="header-phone">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      (612) 876-1200
+    </a>
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-shape hero-shape-1"></div>
-  <div class="hero-shape hero-shape-2"></div>
-  <div class="container">
+  <div class="hero-inner">
     <div class="hero-content">
       <div class="hero-badge">
-        <span class="stars">★★★★★</span> 5.0 Rated on Google
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        Family Owned &amp; Operated
       </div>
-      <h1>Reliable Foundation, Concrete &amp; <span>Insulation Solutions</span> in Rockford, MN</h1>
-      <p>From foundation repair and concrete lifting to spray foam insulation — South Shore Foam LLC delivers dependable structural solutions designed for long-term performance and stability.</p>
-      <div class="hero-actions">
-        <a href="tel:+16128761200" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          (612) 876-1200
-        </a>
-        <a href="#services" class="btn btn-outline">
-          Our Services ↓
-        </a>
+      <h1 class="hero-h1">Foundation, Concrete &amp; <em>Insulation Experts</em> in Rockford, MN</h1>
+      <p class="hero-sub">Dependable structural solutions — from foundation repair and concrete lifting to spray foam insulation — designed to protect your property for the long term.</p>
+      <div class="hero-rating">
+        <div class="hero-stars">★★★★★</div>
+        <div class="hero-rating-text"><strong>5.0</strong> rating · <strong>26</strong> reviews on Google</div>
       </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <strong>5.0 ★</strong>
-          <span>Google Rating</span>
+      <a href="tel:+16128761200" class="hero-cta">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        Call Us Now
+      </a>
+    </div>
+
+    <div class="form-card">
+      <h2>Get Your Free Quote</h2>
+      <p class="form-subtitle">Fill out the form and we'll be in touch quickly.</p>
+      <form id="leadForm">
+        <div class="form-group">
+          <label for="formName">Full Name</label>
+          <input type="text" id="formName" placeholder="John Smith" required>
         </div>
-        <div class="hero-stat">
-          <strong>26</strong>
-          <span>5-Star Reviews</span>
+        <div class="form-group">
+          <label for="formPhone">Phone Number</label>
+          <input type="tel" id="formPhone" placeholder="(612) 555-0123" required>
         </div>
-        <div class="hero-stat">
-          <strong>6+</strong>
-          <span>Service Lines</span>
+        <div class="form-group">
+          <label for="formEmail">Email Address</label>
+          <input type="email" id="formEmail" placeholder="john@example.com" required>
         </div>
-      </div>
+        <button type="submit" class="form-submit">Get My Free Quote →</button>
+        <p class="form-note">
+          <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM9 8V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9z"/></svg>
+          Your information is safe and never shared.
+        </p>
+      </form>
     </div>
   </div>
 </section>
 
-<!-- ===== TRUST BAR ===== -->
-<div class="trust-bar">
-  <div class="container">
-    <div class="trust-bar-inner">
-      <div class="trust-item">
-        <div class="trust-icon trust-icon-google">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-        </div>
-        <div class="trust-text">
-          <strong>5.0 Stars on Google</strong>
-          <span>Based on 26 reviews</span>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon trust-icon-family">👨‍👩‍👧‍👦</div>
-        <div class="trust-text">
-          <strong>Family Owned</strong>
-          <span>Local Rockford business</span>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon trust-icon-honest">✓</div>
-        <div class="trust-text">
-          <strong>Honest Approach</strong>
-          <span>No upselling or jargon</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ===== SERVICES ===== -->
-<section class="services-section" id="services">
-  <div class="container section-center">
+<!-- SERVICES -->
+<section class="section services-section" id="services">
+  <div class="section-inner">
     <div class="section-label">Our Services</div>
-    <h2 class="section-title">Solutions for Every Structural Need</h2>
-    <p class="section-desc">Fix structural issues, improve safety, and protect your property's value through reliable foundation, concrete, insulation, and moisture solutions personalized for long-term stability.</p>
-    <div class="services-grid">
+    <h2 class="section-title">Solutions That Protect Your Property</h2>
+    <p class="section-desc">From structural repair to energy-efficient insulation, we deliver reliable results personalized to your property's needs.</p>
 
+    <div class="services-grid">
+      <!-- Concrete Lifting -->
       <div class="service-card">
-        <div class="service-icon service-icon-concrete">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#92400e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 6v12"/><path d="M2 12h20"/></svg>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 17h2v-7H7v7zm4 0h2V7h-2v10zm4 0h2v-4h-2v4z"/></svg>
         </div>
         <h3>Concrete Lifting</h3>
-        <p>Modify uneven concrete surfaces with precise concrete lifting services that improve safety, restore alignment, and extend long-term durability.</p>
-        <a href="tel:+16128761200" class="service-link">Get a Quote →</a>
+        <p>Correct uneven concrete surfaces with precise lifting services that improve safety, restore alignment, and extend long-term durability.</p>
       </div>
 
+      <!-- Foundation Repair -->
       <div class="service-card">
-        <div class="service-icon service-icon-foundation">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><rect x="9" y="13" width="6" height="8"/></svg>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 9V7h-2V5c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2H2v2h2v2H2v2h2v2H2v2h2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2zm-4 10H6V5h12v14z"/></svg>
         </div>
         <h3>Foundation Repair</h3>
-        <p>When cracks or settling appear, expert foundation repair services restore stability using proven structural solutions for every property type.</p>
-        <a href="tel:+16128761200" class="service-link">Get a Quote →</a>
+        <p>When cracks or settling appear, our expert foundation repair services restore stability using proven structural solutions for every property.</p>
       </div>
 
+      <!-- Foundation Raising -->
       <div class="service-card">
-        <div class="service-icon service-icon-raising">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0e7490" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/><path d="M3 21h18"/></svg>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M7 14l5-5 5 5H7z"/><path d="M5 18h14v2H5z"/></svg>
         </div>
         <h3>Foundation Raising</h3>
         <p>Upgrade sinking structures through professional foundation raising, correcting elevation issues while maintaining building strength and long-term stability.</p>
-        <a href="tel:+16128761200" class="service-link">Get a Quote →</a>
       </div>
 
+      <!-- Ground Improvement -->
       <div class="service-card">
-        <div class="service-icon service-icon-ground">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22 16 8"/><path d="m3.47 12.53 5 5"/><path d="m7.5 8.5 5 5"/><path d="M22 2 12 12"/></svg>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
         </div>
         <h3>Ground Improvement</h3>
-        <p>Enhance load capacity and prevent structural settlement for safer, more reliable construction with professional ground improvement services.</p>
-        <a href="tel:+16128761200" class="service-link">Get a Quote →</a>
+        <p>Enhance load capacity and prevent structural settlement with ground improvement services designed for safer, long-lasting construction.</p>
       </div>
 
+      <!-- Spray Foam Insulation -->
       <div class="service-card">
-        <div class="service-icon service-icon-foam">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c2410c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm0-12c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm2 5.5h-1.5V12h-1v-1.5H10v-1h1.5V8h1v1.5H14v1z"/></svg>
         </div>
         <h3>Spray Foam Insulation</h3>
-        <p>High-quality insulation solutions that create a strong air seal, reduce energy loss, and keep your home or business comfortable in every season.</p>
-        <a href="tel:+16128761200" class="service-link">Get a Quote →</a>
+        <p>High-quality insulation solutions that create a strong air seal, reducing energy loss and keeping your home or business comfortable in every season.</p>
       </div>
 
+      <!-- Concrete Coatings -->
       <div class="service-card">
-        <div class="service-icon service-icon-coatings">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 11-8-8-8.6 8.6a2 2 0 0 0 0 2.8l5.2 5.2c.8.8 2 .8 2.8 0L19 11Z"/><path d="m5 2 5 5"/><path d="M2 13h15"/><path d="M22 20a2 2 0 1 1-4 0c0-1.6 1.7-2.4 2-4 .3 1.6 2 2.4 2 4Z"/></svg>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M18 4V3c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6h1v4H9v11c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-9h8V4h-3z"/></svg>
         </div>
         <h3>Concrete Coatings</h3>
-        <p>Protect and enhance concrete surfaces with durable coating solutions designed to improve appearance, increase longevity, and deliver lasting performance.</p>
-        <a href="tel:+16128761200" class="service-link">Get a Quote →</a>
+        <p>Protect and enhance your concrete surfaces with durable coating solutions designed to improve appearance, increase longevity, and deliver lasting performance.</p>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ===== WHY CHOOSE US ===== -->
-<section id="why">
-  <div class="container section-center">
-    <div class="section-label">Why Choose Us</div>
-    <h2 class="section-title">Build Stability with Experts You Can Trust</h2>
-    <p class="section-desc">South Shore Foam LLC is committed to honest guidance, proven methods, and reliable results that protect your property for the long term.</p>
+<!-- TRUST BAR -->
+<section class="section trust-section">
+  <div class="section-inner">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-stars">★★★★★</div>
+        <div class="trust-number">5.0</div>
+        <div class="trust-label">Google Rating</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">26</div>
+        <div class="trust-label">Verified Google Reviews</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">100%</div>
+        <div class="trust-label">5-Star Reviews</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section why-section">
+  <div class="section-inner">
+    <div class="section-label">Why South Shore Foam</div>
+    <h2 class="section-title">Built on Honesty, Driven by Results</h2>
+    <p class="section-desc">We treat every project like it's our own — delivering proven structural solutions with straight-forward guidance and no unnecessary upselling.</p>
+
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-card-icon why-card-icon-results">📊</div>
-        <h3>Proven Results</h3>
-        <p>We focus on delivering measurable improvements using tested methods that address real structural problems, ensuring long-term stability and consistent performance.</p>
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <div>
+          <h3>Proven Results</h3>
+          <p>Measurable improvements using tested methods that address real structural problems, ensuring long-term stability and consistent performance.</p>
+        </div>
       </div>
       <div class="why-card">
-        <div class="why-card-icon why-card-icon-honest">🤝</div>
-        <h3>Honest Approach</h3>
-        <p>We recommend only what your property truly needs, offering clear guidance and straightforward solutions without unnecessary upselling or confusing technical jargon.</p>
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <div>
+          <h3>Family Owned</h3>
+          <p>As a family-owned business, we bring a personal commitment to every job, treating your property with the care and attention it deserves.</p>
+        </div>
       </div>
       <div class="why-card">
-        <div class="why-card-icon why-card-icon-family">🏠</div>
-        <h3>Family Owned &amp; Local</h3>
-        <p>As a family-owned business based in Rockford, MN, we take pride in serving our community with the same care and attention we'd give our own home.</p>
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <div>
+          <h3>Honest Approach</h3>
+          <p>We recommend only what your property truly needs — clear guidance and straightforward solutions without unnecessary upselling or confusing jargon.</p>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+        </div>
+        <div>
+          <h3>Long-Term Focus</h3>
+          <p>Every solution we implement is designed with durability in mind, focused on structural strength and performance that lasts for years to come.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== QUOTE ===== -->
-<div class="quote-section">
-  <div class="container">
-    <blockquote>
-      Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.
-    </blockquote>
-    <cite>— Matthew 6:34</cite>
-  </div>
-</div>
-
-<!-- ===== SERVICE AREA ===== -->
-<section class="area-section" id="area">
-  <div class="container">
-    <div class="area-inner">
+<!-- SERVICE AREA -->
+<section class="section area-section">
+  <div class="section-inner">
+    <div class="area-content">
+      <div class="area-map-placeholder">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <span>Rockford, MN &amp; Surrounding Areas</span>
+      </div>
       <div class="area-text">
         <div class="section-label">Service Area</div>
-        <h2 class="section-title">Proudly Serving Rockford, MN &amp; Surrounding Areas</h2>
-        <p>South Shore Foam LLC provides foundation repair, concrete lifting, spray foam insulation, and more throughout Rockford and the surrounding communities. We're your local experts for structural solutions you can count on.</p>
-        <a href="tel:+16128761200" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Call (612) 876-1200
-        </a>
-      </div>
-      <div class="area-map">
-        <span class="area-pin">📍</span>
-        <h3>Rockford, Minnesota</h3>
-        <p>Foundation, Concrete &amp; Insulation Specialists</p>
+        <h3>Proudly Serving Rockford, MN &amp; the Surrounding Communities</h3>
+        <p>South Shore Foam LLC is based in Rockford, Minnesota. We provide foundation repair, concrete lifting, spray foam insulation, and related structural services to homeowners and businesses throughout the local area.</p>
         <div class="area-address">
-          3757 Haug Ave SE<br>
-          Rockford, MN 55373
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span>3757 Haug Ave SE, Rockford, MN 55373</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section class="contact-section" id="contact">
-  <div class="container">
-    <div style="text-align:center; margin-bottom: clamp(2rem, 4vw, 3rem);">
-      <div class="section-label">Get In Touch</div>
-      <h2 class="section-title">Ready to Strengthen Your Property?</h2>
-      <p class="section-desc" style="margin-left:auto;margin-right:auto;">Reach out today for dependable solutions that strengthen your property and resolve foundation, concrete, and moisture issues with confidence.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info-card">
-        <h3>Contact Information</h3>
-        <p>We'd love to hear from you. Reach out anytime — no obligation.</p>
-        <div class="contact-item">
-          <div class="contact-item-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </div>
-          <div class="contact-item-text">
-            <strong>Phone</strong>
-            <a href="tel:+16128761200">(612) 876-1200</a>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-item-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          </div>
-          <div class="contact-item-text">
-            <strong>Email</strong>
-            <a href="mailto:southshorefoam@gmail.com">southshorefoam@gmail.com</a>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-item-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div class="contact-item-text">
-            <strong>Address</strong>
-            <span>3757 Haug Ave SE, Rockford, MN 55373</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-cta-card">
-        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:1.5rem;opacity:0.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <h3>Get Your Free Consultation</h3>
-        <p>Call us directly or send an email to discuss your project. We'll assess your needs and provide an honest, no-obligation recommendation.</p>
-        <div class="contact-cta-buttons">
-          <a href="tel:+16128761200" class="btn btn-primary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Call (612) 876-1200
-          </a>
-          <a href="mailto:southshorefoam@gmail.com" class="btn btn-email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            Send Email
-          </a>
-        </div>
-      </div>
+<!-- CONTACT CTA -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Ready to Strengthen Your Property?</h2>
+    <p class="section-desc">Reach out today for dependable solutions that resolve foundation, concrete, and moisture issues with confidence.</p>
+    <div class="contact-actions">
+      <a href="tel:+16128761200" class="contact-btn contact-btn-primary">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        (612) 876-1200
+      </a>
+      <a href="mailto:southshorefoam@gmail.com" class="contact-btn contact-btn-secondary">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Email Us
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="container">
-    <span class="footer-brand">South Shore Foam LLC</span>
-    <p>Foundation, Concrete &amp; Insulation Solutions · Rockford, MN</p>
-    <div class="footer-divider"></div>
-    <p><a href="tel:+16128761200">(612) 876-1200</a> · <a href="mailto:southshorefoam@gmail.com">southshorefoam@gmail.com</a></p>
-    <p style="margin-top:0.75rem; font-size:0.8rem; opacity:0.6;">Website redesign mockup — private preview only.</p>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo" aria-label="South Shore Foam Home">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+          </div>
+          <div class="logo-text">
+            South Shore Foam
+            <span>LLC</span>
+          </div>
+        </a>
+        <p>Family-owned structural solution experts in Rockford, MN. Foundation repair, concrete lifting, spray foam insulation, and more.</p>
+      </div>
+      <ul class="footer-contact-list">
+        <li>
+          <a href="tel:+16128761200">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            (612) 876-1200
+          </a>
+        </li>
+        <li>
+          <a href="mailto:southshorefoam@gmail.com">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            southshorefoam@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://maps.google.com/?q=3757+Haug+Ave+SE+Rockford+MN+55373" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            3757 Haug Ave SE, Rockford, MN 55373
+          </a>
+        </li>
+      </ul>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      © 2025 South Shore Foam LLC. All rights reserved.
+    </div>
   </div>
 </footer>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  this.innerHTML = '<div class="form-success"><div class="check-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div><h3>Thank You!</h3><p>Thanks — we\'ll be in touch shortly!</p></div>';
+});
+</script>
 
 </body>
 </html>
