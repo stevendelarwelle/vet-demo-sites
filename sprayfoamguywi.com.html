@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Spray Foam Guy - Elite Builders & Remodeling LLC | Baldwin, WI</title>
+<style>
+:root {
+  --navy: #1a2744;
+  --navy-dark: #111c33;
+  --blue: #2b6cb0;
+  --blue-light: #3b82f6;
+  --blue-glow: #60a5fa;
+  --orange: #f59e0b;
+  --orange-dark: #d97706;
+  --orange-light: #fbbf24;
+  --white: #ffffff;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --green: #10b981;
+  --green-dark: #059669;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 6px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.06);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,.15), 0 4px 12px rgba(0,0,0,.1);
+  --shadow-xl: 0 20px 50px rgba(0,0,0,.2), 0 8px 20px rgba(0,0,0,.12);
+  --font: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--gray-800);
+  line-height: 1.6;
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+/* ─── Sticky Header ─── */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(26, 39, 68, 0.97);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 0 clamp(1rem, 4vw, 3rem);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-size: clamp(0.85rem, 2vw, 1.05rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.logo-text span {
+  display: block;
+  font-size: 0.7em;
+  font-weight: 400;
+  opacity: 0.7;
+  letter-spacing: 0;
+}
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  padding: 8px 18px;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.2s;
+}
+
+.header-phone:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: var(--navy-dark);
+}
+
+.header-phone svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ─── Hero Section ─── */
+.hero {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-dark) 60%, #0f1729 100%);
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 4vw, 3rem) clamp(3rem, 7vw, 6rem);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -15%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(245,158,11,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero Left */
+.hero-content {
+  color: var(--white);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245,158,11,0.12);
+  border: 1px solid rgba(245,158,11,0.3);
+  color: var(--orange-light);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 16px;
+  border-radius: 50px;
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+
+.hero-badge svg {
+  width: 16px;
+  height: 16px;
+}
+
+.hero-h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+.hero-h1 .highlight {
+  background: linear-gradient(135deg, var(--orange), var(--orange-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  color: rgba(255,255,255,0.7);
+  margin-bottom: clamp(1.25rem, 2vw, 1.75rem);
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
+}
+
+.hero-stars {
+  display: flex;
+  gap: 2px;
+  color: var(--orange);
+}
+
+.hero-stars svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hero-rating-text {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.hero-rating-text strong {
+  color: var(--white);
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+  color: var(--navy-dark);
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  transition: all 0.25s;
+  box-shadow: 0 4px 15px rgba(245,158,11,0.3);
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245,158,11,0.4);
+}
+
+.hero-cta svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hero Right — Form Card */
+.form-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: var(--shadow-xl);
+  position: relative;
+}
+
+.form-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--orange), var(--blue-light));
+  border-radius: 16px 16px 0 0;
+}
+
+.form-title {
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.form-subtitle {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-family: var(--font);
+  color: var(--gray-800);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: var(--gray-50);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--blue-light);
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
+  background: var(--white);
+}
+
+.form-input::placeholder {
+  color: var(--gray-300);
+}
+
+.form-submit {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: all 0.25s;
+  margin-top: 6px;
+  box-shadow: 0 4px 12px rgba(16,185,129,0.3);
+}
+
+.form-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(16,185,129,0.4);
+}
+
+.form-note {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--gray-500);
+  margin-top: 10px;
+}
+
+.form-note svg {
+  width: 13px;
+  height: 13px;
+  vertical-align: -2px;
+  margin-right: 3px;
+}
+
+.form-success {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.form-success .check-circle {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.form-success .check-circle svg {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+.form-success h3 {
+  font-size: 1.3rem;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.form-success p {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+}
+
+/* ─── Services Section ─── */
+.services {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 4vw, 3rem);
+  background: var(--gray-50);
+}
+
+.section-center {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto clamp(2rem, 4vw, 3.5rem);
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: var(--gray-900);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.section-desc {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border: 1px solid var(--gray-200);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+
+.service-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--blue-light));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.service-card:hover::after {
+  opacity: 1;
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.service-icon.foam {
+  background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(59,130,246,0.05));
+  color: var(--blue);
+}
+
+.service-icon.blown {
+  background: linear-gradient(135deg, rgba(245,158,11,0.1), rgba(245,158,11,0.05));
+  color: var(--orange-dark);
+}
+
+.service-icon.remodel {
+  background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(16,185,129,0.05));
+  color: var(--green-dark);
+}
+
+.service-icon.deck {
+  background: linear-gradient(135deg, rgba(139,92,246,0.1), rgba(139,92,246,0.05));
+  color: #7c3aed;
+}
+
+.service-icon.roofing {
+  background: linear-gradient(135deg, rgba(239,68,68,0.1), rgba(239,68,68,0.05));
+  color: #dc2626;
+}
+
+.service-icon.pole {
+  background: linear-gradient(135deg, rgba(107,114,128,0.1), rgba(107,114,128,0.05));
+  color: var(--gray-600);
+}
+
+.service-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  font-size: 0.92rem;
+  color: var(--gray-500);
+  line-height: 1.55;
+}
+
+/* ─── Trust Bar ─── */
+.trust {
+  padding: clamp(2.5rem, 6vw, 4rem) clamp(1rem, 4vw, 3rem);
+  background: var(--navy);
+  color: var(--white);
+}
+
+.trust-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.trust-item {
+  padding: 1.5rem 1rem;
+}
+
+.trust-value {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.trust-value.gold {
+  background: linear-gradient(135deg, var(--orange), var(--orange-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.trust-label {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+  font-weight: 500;
+}
+
+.trust-stars-row {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 8px;
+  color: var(--orange);
+}
+
+.trust-stars-row svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* ─── About Section ─── */
+.about {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 4vw, 3rem);
+  background: var(--white);
+}
+
+.about-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.about-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-graphic {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, var(--navy), var(--blue));
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-graphic::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -30%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(245,158,11,0.15) 0%, transparent 70%);
+}
+
+.about-graphic svg {
+  width: 64px;
+  height: 64px;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+.about-graphic p {
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.about-text h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.about-text p {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  color: var(--gray-600);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+/* ─── Service Area ─── */
+.area {
+  padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 3rem);
+  background: var(--gray-50);
+  text-align: center;
+}
+
+.area-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(43,108,176,0.08);
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blue);
+  border: 1px solid rgba(43,108,176,0.15);
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+}
+
+.area-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ─── Contact Section ─── */
+.contact {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 4vw, 3rem);
+  background: var(--white);
+}
+
+.contact-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+.contact-card {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--blue-light);
+}
+
+.contact-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--blue), var(--blue-light));
+  color: var(--white);
+}
+
+.contact-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-info h3 {
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-500);
+  margin-bottom: 2px;
+}
+
+.contact-info p {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+/* ─── Footer ─── */
+.footer {
+  background: var(--navy-dark);
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  padding: clamp(2rem, 4vw, 3rem) clamp(1rem, 4vw, 3rem);
+  font-size: 0.85rem;
+}
+
+.footer-logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.footer p {
+  margin-bottom: 4px;
+}
+
+.footer a {
+  color: var(--orange-light);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* ─── Responsive Desktop ─── */
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1.1fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-inner {
+    height: 72px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div class="logo-text">Spray Foam Guy<span>Elite Builders &amp; Remodeling</span></div>
+    </a>
+    <a href="tel:+17154100552" class="header-phone">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (715) 410-0552
+    </a>
+  </div>
+</header>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Baldwin, Wisconsin
+      </div>
+      <h1 class="hero-h1">Spray Foam Insulation<br>Done <span class="highlight">Right.</span></h1>
+      <p class="hero-sub">Closed cell spray foam, blown insulation, remodeling, and more — serving Western Wisconsin with quality you can trust.</p>
+      <div class="hero-trust">
+        <div class="hero-stars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+        </div>
+        <span class="hero-rating-text"><strong>5.0</strong> on Google (1 review)</span>
+      </div>
+      <a href="tel:+17154100552" class="hero-cta">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call (715) 410-0552
+      </a>
+    </div>
+
+    <div class="form-card" id="formCard">
+      <form id="leadForm">
+        <div class="form-title">Get Your Free Estimate</div>
+        <p class="form-subtitle">Fill out the form and we'll get back to you fast.</p>
+        <div class="form-group">
+          <label class="form-label" for="fname">Full Name</label>
+          <input class="form-input" type="text" id="fname" placeholder="Jared Smith" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fphone">Phone Number</label>
+          <input class="form-input" type="tel" id="fphone" placeholder="(715) 555-0123" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="femail">Email Address</label>
+          <input class="form-input" type="email" id="femail" placeholder="you@email.com" required>
+        </div>
+        <button type="submit" class="form-submit">Get My Free Quote →</button>
+        <p class="form-note">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Your info is private. No spam, ever.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="services" id="services">
+  <div class="section-center">
+    <div class="section-eyebrow">◆ What We Do</div>
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-desc">From insulation to full remodels, Spray Foam Guy handles it all with the care of a small-town business and professional-grade results.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon foam">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3>Closed Cell Spray Foam</h3>
+      <p>Our specialty — closed cell spray foam insulation delivers superior R-value, moisture barrier, and structural reinforcement for homes and buildings.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon blown">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M17.7 7.7a7.5 7.5 0 1 0-10.6 10.6"/><path d="M9.4 4.6A2 2 0 1 1 7 7"/><path d="M21 12h-1"/><path d="M3 12H2"/><path d="M12 3V2"/><path d="M12 22v-1"/></svg>
+      </div>
+      <h3>Blown Insulation</h3>
+      <p>Blown insulation may be the right choice for your project — an efficient, cost-effective solution for attics, walls, and hard-to-reach spaces.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon remodel">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <h3>Custom Remodeling</h3>
+      <p>Turn your vision into reality with custom remodeling services — kitchens, bathrooms, living spaces, and everything in between.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon deck">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+      </div>
+      <h3>Decks &amp; Patios</h3>
+      <p>Let's build your dream outdoor space — custom decks and patios designed and built to complement your home and lifestyle.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon roofing">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <h3>Roofing &amp; Siding</h3>
+      <p>Protect your home from the elements with professional roofing and siding installation built to last through Wisconsin weather.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon pole">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="1" y="6" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+      </div>
+      <h3>Pole Sheds &amp; Barns</h3>
+      <p>From yard barns to full-size pole sheds, we build durable outbuildings that serve your property for years to come.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TRUST BAR ═══ -->
+<section class="trust">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <div class="trust-stars-row">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+      </div>
+      <div class="trust-value gold">5.0</div>
+      <div class="trust-label">Google Rating</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-value gold" style="font-size: clamp(1.2rem,3vw,1.6rem); line-height: 1.4;">✓</div>
+      <div class="trust-value" style="font-size: clamp(1.2rem,3vw,1.5rem);">Family Owned</div>
+      <div class="trust-label">Jared &amp; Steph, Baldwin WI</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-value gold" style="font-size: clamp(1.2rem,3vw,1.6rem); line-height: 1.4;">$0</div>
+      <div class="trust-value" style="font-size: clamp(1.2rem,3vw,1.5rem);">Free Estimates</div>
+      <div class="trust-label">No obligation, no pressure</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-visual">
+      <div class="about-graphic">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <p>Jared &amp; Steph — Your Local Team</p>
+      </div>
+    </div>
+    <div class="about-text">
+      <h2>A Little About Us</h2>
+      <p>After doing pest and wildlife control for fifteen years, Jared and his wife, Steph decided it was time for something new. Jared has always enjoyed doing home remodeling projects for his own home so he went with it and started Elite Builders and Remodeling, LLC.</p>
+      <p>After six years in the carpentry industry, he invested in a spray foam rig and has since dedicated the majority of his time in the past year to spray foam and blown in insulation.</p>
+      <p>Both Jared and Steph were born and raised in a small town in Western Wisconsin. As high school sweethearts, they got married, had four children and chose to stay in that same small town that formed who they are today. They stay busy with their four kids and business, but love living this life!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICE AREA ═══ -->
+<section class="area" id="area">
+  <div class="section-center" style="margin-bottom: 0;">
+    <div class="section-eyebrow">◆ Service Area</div>
+    <h2 class="section-title">Proudly Serving Baldwin, WI &amp; Surrounding Areas</h2>
+    <p class="section-desc">Based out of Baldwin, Wisconsin, we serve homeowners and businesses throughout Western Wisconsin. Give us a call to find out if we cover your area.</p>
+    <div class="area-badge">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      17 230th St, Baldwin, WI 54002
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="contact" id="contact">
+  <div class="section-center">
+    <div class="section-eyebrow">◆ Get In Touch</div>
+    <h2 class="section-title">Ready to Chat?</h2>
+    <p class="section-desc">Give us a call today to set up a time for a free estimate. We're excited to talk to you about your project!</p>
+  </div>
+  <div class="contact-grid">
+    <a href="tel:+17154100552" class="contact-card">
+      <div class="contact-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+      <div class="contact-info">
+        <h3>Phone</h3>
+        <p>(715) 410-0552</p>
+      </div>
+    </a>
+    <a href="mailto:sprayfoamguywi@gmail.com" class="contact-card">
+      <div class="contact-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div class="contact-info">
+        <h3>Email</h3>
+        <p>sprayfoamguywi@gmail.com</p>
+      </div>
+    </a>
+    <div class="contact-card">
+      <div class="contact-icon" style="background: linear-gradient(135deg, var(--green), var(--green-dark));">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="contact-info">
+        <h3>Address</h3>
+        <p>17 230th St, Baldwin, WI 54002</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-logo">Spray Foam Guy — Elite Builders &amp; Remodeling LLC</div>
+  <p>17 230th St, Baldwin, WI 54002</p>
+  <p><a href="tel:+17154100552">(715) 410-0552</a> · <a href="mailto:sprayfoamguywi@gmail.com">sprayfoamguywi@gmail.com</a></p>
+  <p style="margin-top: 12px; font-size: 0.78rem; opacity: 0.6;">© 2024 Elite Builders &amp; Remodeling LLC. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.getElementById('formCard').querySelector('form').innerHTML = '<div class="form-success"><div class="check-circle"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><h3>Thanks — we\'ll be in touch shortly!</h3><p>We typically respond within a few hours during business hours.</p></div>';
+});
+</script>
+
+</body>
+</html>
