@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Northern Industrial Insulation | Commercial & Industrial Insulation Since 1983</title>
+<style>
+  :root {
+    --color-primary: #1a3a5c;
+    --color-primary-dark: #0f2744;
+    --color-accent: #e8792b;
+    --color-accent-hover: #d06820;
+    --color-light: #f4f7fa;
+    --color-white: #ffffff;
+    --color-text: #2c3e50;
+    --color-text-light: #5a6a7a;
+    --color-border: #dce3eb;
+    --color-success: #27ae60;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
+    --shadow-lg: 0 16px 48px rgba(0,0,0,0.16);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    line-height: 1.6;
+    background: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Sticky Header */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    font-size: clamp(0.85rem, 2vw, 1.05rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .logo-text span {
+    display: block;
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 0.85em;
+  }
+
+  .header-phone {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    background: var(--color-light);
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .header-phone:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .header-phone svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, #2a5a8c 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(232,121,43,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 6vw, 5rem) 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: 768px) {
+    .hero-inner {
+      grid-template-columns: 1fr 420px;
+      gap: 3rem;
+      align-items: center;
+    }
+  }
+
+  .hero-content {
+    color: var(--color-white);
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(232,121,43,0.2);
+    border: 1px solid rgba(232,121,43,0.4);
+    color: #f7a96d;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 .accent {
+    color: var(--color-accent);
+  }
+
+  .hero-sub {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 1.5rem;
+    max-width: 520px;
+    line-height: 1.5;
+  }
+
+  .trust-row {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.75rem;
+  }
+
+  .google-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .stars {
+    display: flex;
+    gap: 2px;
+    color: #f5c518;
+    font-size: 1rem;
+  }
+
+  .rating-text {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.85);
+    font-weight: 500;
+  }
+
+  .rating-text strong {
+    color: var(--color-white);
+  }
+
+  .since-badge {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.75);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--color-accent);
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 0.9rem 1.75rem;
+    border-radius: var(--radius-sm);
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 4px 14px rgba(232,121,43,0.35);
+  }
+
+  .hero-cta:hover {
+    background: var(--color-accent-hover);
+    transform: translateY(-1px);
+  }
+
+  .hero-cta svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Lead Form Card */
+  .form-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+  }
+
+  .form-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-accent), #f5a623);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+
+  .form-card h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.35rem;
+  }
+
+  .form-card .form-sub {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    transition: border-color 0.2s;
+    background: var(--color-light);
+  }
+
+  .form-group input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    background: var(--color-white);
+  }
+
+  .form-group input::placeholder {
+    color: #a0aec0;
+  }
+
+  .form-submit {
+    width: 100%;
+    padding: 0.9rem;
+    background: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-family: var(--font-sans);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 4px 14px rgba(232,121,43,0.3);
+    margin-top: 0.5rem;
+  }
+
+  .form-submit:hover {
+    background: var(--color-accent-hover);
+    transform: translateY(-1px);
+  }
+
+  .form-note {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--color-text-light);
+    margin-top: 0.75rem;
+  }
+
+  .form-note svg {
+    width: 12px;
+    height: 12px;
+    vertical-align: -1px;
+    margin-right: 3px;
+  }
+
+  .thank-you {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .thank-you .check-circle {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background: var(--color-success);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .thank-you h3 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .thank-you p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+  }
+
+  /* Services */
+  .section {
+    padding: clamp(3rem, 8vw, 5rem) 1.5rem;
+  }
+
+  .section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+    font-weight: 800;
+    color: var(--color-primary);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-desc {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 2rem 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--color-accent);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+
+  .service-card:hover::after {
+    transform: scaleX(1);
+  }
+
+  .service-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  .service-icon.blue {
+    background: rgba(26,58,92,0.1);
+    color: var(--color-primary);
+  }
+
+  .service-icon.orange {
+    background: rgba(232,121,43,0.12);
+    color: var(--color-accent);
+  }
+
+  .service-icon.teal {
+    background: rgba(32,160,144,0.1);
+    color: #20a090;
+  }
+
+  .service-icon.indigo {
+    background: rgba(88,80,190,0.1);
+    color: #5850be;
+  }
+
+  .service-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .service-card p {
+    font-size: 0.92rem;
+    color: var(--color-text-light);
+    line-height: 1.55;
+  }
+
+  /* Trust Bar */
+  .trust-section {
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+  }
+
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .trust-item {
+    padding: 1.5rem 1rem;
+  }
+
+  .trust-item .big-num {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    color: var(--color-accent);
+    line-height: 1.2;
+  }
+
+  .trust-item .big-stars {
+    font-size: 1.5rem;
+    color: #f5c518;
+    margin-bottom: 0.25rem;
+  }
+
+  .trust-item .trust-label {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: 0.25rem;
+    font-weight: 500;
+  }
+
+  /* Projects */
+  .projects-section {
+    background: var(--color-light);
+  }
+
+  .projects-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .projects-cols {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .project-category {
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    border: 1px solid var(--color-border);
+  }
+
+  .project-category h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .project-category h3 .cat-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .project-category ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .project-category li {
+    font-size: 0.82rem;
+    background: var(--color-light);
+    color: var(--color-text);
+    padding: 0.35rem 0.75rem;
+    border-radius: 50px;
+    border: 1px solid var(--color-border);
+    font-weight: 500;
+  }
+
+  /* Service Area */
+  .area-section {
+    background: var(--color-white);
+  }
+
+  .area-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .area-content {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .area-map-placeholder {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #2a5a8c 100%);
+    border-radius: var(--radius-md);
+    padding: 3rem 2rem;
+    color: var(--color-white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .area-map-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 30% 40%, rgba(255,255,255,0.06) 0%, transparent 50%),
+      radial-gradient(circle at 70% 60%, rgba(232,121,43,0.1) 0%, transparent 40%);
+  }
+
+  .area-map-placeholder .pin-icon {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    position: relative;
+  }
+
+  .area-map-placeholder p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: relative;
+  }
+
+  .area-map-placeholder .area-sub {
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.75;
+    margin-top: 0.5rem;
+  }
+
+  .area-details h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  .area-details p {
+    color: var(--color-text-light);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .area-details .contact-line {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  .area-details .contact-line svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--color-accent);
+  }
+
+  .area-details .contact-line a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .area-details .contact-line a:hover {
+    color: var(--color-accent);
+  }
+
+  /* Contact / CTA Section */
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  .cta-section .section-label {
+    color: #f7a96d;
+  }
+
+  .cta-section .section-title {
+    color: var(--color-white);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-section .section-desc {
+    color: rgba(255,255,255,0.75);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .cta-btn.primary {
+    background: var(--color-accent);
+    color: var(--color-white);
+    box-shadow: 0 4px 14px rgba(232,121,43,0.4);
+  }
+
+  .cta-btn.secondary {
+    background: rgba(255,255,255,0.12);
+    color: var(--color-white);
+    border: 1px solid rgba(255,255,255,0.25);
+  }
+
+  .cta-btn.secondary:hover {
+    background: rgba(255,255,255,0.2);
+  }
+
+  .cta-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Footer */
+  .footer {
+    background: #0a1a2a;
+    color: rgba(255,255,255,0.6);
+    padding: 2rem 1.5rem;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-left {
+    font-size: 0.85rem;
+  }
+
+  .footer-left strong {
+    color: var(--color-white);
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .footer-right {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .footer-right a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-right a:hover {
+    color: var(--color-accent);
+  }
+
+  @media (max-width: 767px) {
+    .header-phone span.phone-text {
+      display: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo" aria-label="Northern Industrial Insulation">
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+        <rect width="40" height="40" rx="8" fill="#1a3a5c"/>
+        <path d="M10 30V14l10-6 10 6v16" stroke="#e8792b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 30V22h8v8" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 14l10-6 10 6" stroke="#e8792b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="20" y1="8" x2="20" y2="12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div class="logo-text">
+        Northern Industrial<span>Insulation</span>
+      </div>
+    </a>
+    <a href="tel:+12186240574" class="header-phone" aria-label="Call us">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="phone-text">(218) 624-0574</span>
+    </a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        Serving the Midwest Since 1983
+      </div>
+      <h1>Commercial &amp; Industrial <span class="accent">Insulation</span> You Can Trust</h1>
+      <p class="hero-sub">No project too big or too small. High-quality pipe, boiler, duct, and equipment insulation for new and retrofit projects.</p>
+      <div class="trust-row">
+        <div class="google-rating">
+          <div class="stars">★★★★<span style="opacity:0.5">★</span></div>
+          <div class="rating-text"><strong>4.3</strong> / 5 · 4 reviews on Google</div>
+        </div>
+        <div class="since-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          40+ years in business
+        </div>
+      </div>
+      <a href="tel:+12186240574" class="hero-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call (218) 624-0574
+      </a>
+    </div>
+
+    <div class="form-card" id="leadFormCard">
+      <form id="leadForm" autocomplete="on">
+        <h2>Get Your Free Quote</h2>
+        <p class="form-sub">Fill out the form and we'll get back to you within one business day.</p>
+        <div class="form-group">
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="name" placeholder="John Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="fphone">Phone Number</label>
+          <input type="tel" id="fphone" name="phone" placeholder="(555) 123-4567" required>
+        </div>
+        <div class="form-group">
+          <label for="femail">Email Address</label>
+          <input type="email" id="femail" name="email" placeholder="john@example.com" required>
+        </div>
+        <button type="submit" class="form-submit">Get My Free Quote →</button>
+        <p class="form-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Your information is 100% confidential.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section" id="services">
+  <div class="section-inner">
+    <span class="section-label">Our Services</span>
+    <h2 class="section-title">Comprehensive Insulation Solutions</h2>
+    <p class="section-desc">From industrial plants to commercial buildings, NII provides expert insulation services for every application.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon blue">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M7 8V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="16" y1="13" x2="16" y2="15"/></svg>
+        </div>
+        <h3>Boiler Insulation</h3>
+        <p>Thermal insulation for boilers of all sizes, improving energy efficiency and reducing heat loss across commercial and industrial systems.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon orange">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16v4H4z"/><path d="M6 8v12h12V8"/><path d="M4 8l8-4 8 4"/></svg>
+        </div>
+        <h3>Duct Insulation</h3>
+        <p>Complete duct insulation for HVAC systems, preventing energy waste and condensation while maintaining optimal air temperature delivery.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon teal">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12h16"/><path d="M4 6h16"/><path d="M4 18h16"/><circle cx="4" cy="12" r="1.5" fill="currentColor"/><circle cx="20" cy="12" r="1.5" fill="currentColor"/></svg>
+        </div>
+        <h3>Pipe Insulation</h3>
+        <p>Insulation for all types of piping systems — steam, hot water, chilled water, and process piping — for both new construction and retrofits.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon indigo">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M12 6V3"/><path d="M8 6V4"/><path d="M16 6V4"/><circle cx="12" cy="14" r="3"/></svg>
+        </div>
+        <h3>Equipment Insulation</h3>
+        <p>Custom insulation solutions for tanks, vessels, and specialty equipment, maintaining thermal performance and protecting personnel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<section class="section trust-section">
+  <div class="section-inner">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="big-num">40+</div>
+        <div class="trust-label">Years in Business</div>
+      </div>
+      <div class="trust-item">
+        <div class="big-stars">★★★★☆</div>
+        <div class="big-num">4.3 / 5</div>
+        <div class="trust-label">Google Rating (4 Reviews)</div>
+      </div>
+      <div class="trust-item">
+        <div class="big-num">2</div>
+        <div class="trust-label">Project Types: Commercial &amp; Industrial</div>
+      </div>
+      <div class="trust-item">
+        <div class="big-num">Midwest</div>
+        <div class="trust-label">Regional Service Coverage</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Notable Projects -->
+<section class="section projects-section" id="projects">
+  <div class="section-inner">
+    <span class="section-label">Proven Track Record</span>
+    <h2 class="section-title">Notable Projects</h2>
+    <p class="section-desc">Trusted by leading organizations across the Midwest for commercial and industrial insulation work.</p>
+    <div class="projects-cols">
+      <div class="project-category">
+        <h3><span class="cat-dot" style="background:var(--color-accent)"></span> Commercial Projects</h3>
+        <ul>
+          <li>University of Minnesota Duluth</li>
+          <li>University of Wisconsin Superior</li>
+          <li>Local & Regional School Districts</li>
+          <li>Pier B Hotel</li>
+          <li>Kwik Trip Stores</li>
+          <li>Maurices Corp. HQ</li>
+          <li>St. Luke's Hospital</li>
+          <li>Essentia Health</li>
+          <li>Essentia Vision Northland</li>
+          <li>College of St. Scholastica</li>
+          <li>Stanbrook Hall</li>
+          <li>Bent Paddle Brewing</li>
+          <li>Castle Danger Brewery</li>
+          <li>Blacklist Brewing</li>
+          <li>Ursa Minor Brewing</li>
+          <li>Fitger's Brewhouse</li>
+          <li>Earth Rider Brewery</li>
+        </ul>
+      </div>
+      <div class="project-category">
+        <h3><span class="cat-dot" style="background:var(--color-primary)"></span> Industrial Projects</h3>
+        <ul>
+          <li>Fraser Shipyards</li>
+          <li>Air National Guard</li>
+          <li>Sappi Paper</li>
+          <li>Superior Oil Refinery</li>
+          <li>Cleveland Cliffs</li>
+          <li>Duluth Energy</li>
+          <li>Mesabi Nugget</li>
+          <li>Northern Natural Gas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service Area -->
+<section class="section area-section" id="service-area">
+  <div class="section-inner">
+    <span class="section-label">Service Area</span>
+    <h2 class="section-title">Proudly Serving the Midwest</h2>
+    <p class="section-desc">Based in Hermantown, MN — serving the greater Duluth-Superior area and throughout the Midwest region.</p>
+    <div class="area-content">
+      <div class="area-map-placeholder">
+        <div class="pin-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <p>Hermantown, MN 55810</p>
+        <p class="area-sub">3757 Midway Rd · Duluth-Superior Metro Area</p>
+      </div>
+      <div class="area-details">
+        <h3>Get in Touch</h3>
+        <p>Whether you need insulation for a commercial building, industrial facility, or a retrofit project, our team is ready to help. We work on both new construction and existing systems throughout the Midwest.</p>
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 3.12 4.18 2 2 0 0 1 5.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+12186240574">(218) 624-0574</a>
+        </div>
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:info@niinsulation.com">info@niinsulation.com</a>
+        </div>
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>3757 Midway Rd, Hermantown, MN 55810</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta-section">
+  <div class="section-inner" style="text-align:center">
+    <span class="section-label">Ready to Get Started?</span>
+    <h2 class="section-title">Let's Discuss Your Insulation Project</h2>
+    <p class="section-desc">No project too big or too small. Contact us today for a free consultation and estimate on your commercial or industrial insulation needs.</p>
+    <div class="cta-buttons">
+      <a href="tel:+12186240574" class="cta-btn primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 3.12 4.18 2 2 0 0 1 5.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call (218) 624-0574
+      </a>
+      <a href="mailto:info@niinsulation.com" class="cta-btn secondary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <strong>Northern Industrial Insulation</strong>
+      &copy; 2024 Northern Industrial Insulation. All rights reserved.<br>
+      3757 Midway Rd, Hermantown, MN 55810
+    </div>
+    <div class="footer-right">
+      <a href="tel:+12186240574">(218) 624-0574</a>
+      <a href="mailto:info@niinsulation.com">info@niinsulation.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.getElementById('leadFormCard').innerHTML = '<div class="thank-you"><div class="check-circle">✓</div><h3>Thank You!</h3><p>We\'ve received your request.<br>We\'ll be in touch shortly!</p></div>';
+});
+</script>
+</body>
+</html>
