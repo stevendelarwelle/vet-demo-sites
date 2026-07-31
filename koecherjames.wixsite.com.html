@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Spray Foam Services | Insulation Contractor – Central to Northern Minnesota</title>
+<style>
+:root {
+  --clr-primary: #1a5276;
+  --clr-primary-dark: #0e3a56;
+  --clr-primary-light: #2980b9;
+  --clr-accent: #e67e22;
+  --clr-accent-dark: #cf6d17;
+  --clr-bg: #f4f7fa;
+  --clr-white: #ffffff;
+  --clr-dark: #1a1a2e;
+  --clr-text: #2c3e50;
+  --clr-text-light: #5d6d7e;
+  --clr-border: #dce4ec;
+  --clr-hero-start: #0e3a56;
+  --clr-hero-end: #1a6da0;
+  --clr-card-bg: #ffffff;
+  --clr-success: #27ae60;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.18);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --font-sans: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --container: min(1200px, 92%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  color: var(--clr-text);
+  background: var(--clr-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Sticky Header ─────────────────────────── */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--clr-white);
+  border-bottom: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-sm);
+}
+.header-inner {
+  width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--clr-primary);
+}
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--clr-primary), var(--clr-primary-light));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.logo-icon svg { width: 22px; height: 22px; fill: var(--clr-white); }
+.logo-text {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: var(--clr-primary);
+  font-weight: 600;
+  font-size: clamp(0.85rem, 1.8vw, 1rem);
+  background: rgba(26,82,118,0.07);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: background 0.2s, color 0.2s;
+}
+.header-phone:hover {
+  background: var(--clr-primary);
+  color: var(--clr-white);
+}
+.header-phone svg { width: 18px; height: 18px; fill: currentColor; }
+
+/* ── Hero ──────────────────────────────────── */
+.hero {
+  background: linear-gradient(135deg, var(--clr-hero-start) 0%, var(--clr-hero-end) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(230,126,34,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.hero-inner {
+  width: var(--container);
+  margin: 0 auto;
+  padding: 3.5rem 0 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+.hero-content { color: var(--clr-white); }
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 0.35rem 0.9rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.2rem;
+  color: rgba(255,255,255,0.9);
+}
+.eyebrow svg { width: 14px; height: 14px; fill: var(--clr-accent); }
+.hero h1 {
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+.hero h1 span { color: var(--clr-accent); }
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1.5rem;
+  max-width: 520px;
+  line-height: 1.5;
+}
+.trust-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.stars {
+  display: flex;
+  gap: 2px;
+  color: #f1c40f;
+  font-size: 1.1rem;
+}
+.trust-text {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+}
+.trust-text strong {
+  color: var(--clr-white);
+  font-weight: 700;
+}
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--clr-accent);
+  color: var(--clr-white);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.85rem 1.8rem;
+  border-radius: 50px;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 16px rgba(230,126,34,0.4);
+}
+.hero-cta:hover {
+  background: var(--clr-accent-dark);
+  transform: translateY(-1px);
+}
+.hero-cta svg { width: 18px; height: 18px; fill: currentColor; }
+
+/* ── Lead Form Card ────────────────────────── */
+.lead-card {
+  background: var(--clr-card-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 2rem 1.75rem;
+  align-self: start;
+}
+.lead-card h2 {
+  color: var(--clr-primary-dark);
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+.lead-card .card-sub {
+  color: var(--clr-text-light);
+  font-size: 0.88rem;
+  margin-bottom: 1.25rem;
+}
+.lead-card label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--clr-text);
+  margin-bottom: 0.3rem;
+}
+.lead-card input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-family: inherit;
+  margin-bottom: 0.9rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #f9fbfd;
+  color: var(--clr-dark);
+}
+.lead-card input:focus {
+  outline: none;
+  border-color: var(--clr-primary-light);
+  box-shadow: 0 0 0 3px rgba(41,128,185,0.12);
+  background: var(--clr-white);
+}
+.lead-card input::placeholder { color: #a0aec0; }
+.btn-submit {
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+  background: var(--clr-accent);
+  color: var(--clr-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 12px rgba(230,126,34,0.3);
+  margin-top: 0.25rem;
+}
+.btn-submit:hover {
+  background: var(--clr-accent-dark);
+  transform: translateY(-1px);
+}
+.form-note {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--clr-text-light);
+  margin-top: 0.75rem;
+}
+.form-success {
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+.form-success .check-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.form-success .check-circle svg { width: 28px; height: 28px; fill: var(--clr-white); }
+.form-success h3 {
+  color: var(--clr-primary-dark);
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+.form-success p {
+  color: var(--clr-text-light);
+  font-size: 0.92rem;
+}
+
+/* ── Section Shared ────────────────────────── */
+.section {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+}
+.section-inner {
+  width: var(--container);
+  margin: 0 auto;
+}
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--clr-primary-light);
+  margin-bottom: 0.6rem;
+}
+.section-title {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--clr-dark);
+  margin-bottom: 0.5rem;
+}
+.section-subtitle {
+  color: var(--clr-text-light);
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+
+/* ── Services ──────────────────────────────── */
+.services-section { background: var(--clr-white); }
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+.service-card {
+  background: var(--clr-bg);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.5rem;
+  transition: box-shadow 0.25s, transform 0.2s;
+}
+.service-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--clr-primary), var(--clr-primary-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.service-icon svg { width: 24px; height: 24px; fill: var(--clr-white); }
+.service-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--clr-dark);
+  margin-bottom: 0.5rem;
+}
+.service-card p {
+  color: var(--clr-text-light);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+/* ── Trust Bar ─────────────────────────────── */
+.trust-section {
+  background: linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary));
+  color: var(--clr-white);
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  text-align: center;
+}
+.trust-item {}
+.trust-number {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+.trust-number .star-color { color: #f1c40f; }
+.trust-desc {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  margin-top: 0.25rem;
+}
+.trust-desc strong {
+  color: var(--clr-white);
+}
+
+/* ── Why Choose Us (benefits) ──────────────── */
+.benefits-section { background: var(--clr-bg); }
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+.benefit-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.benefit-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(26,82,118,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefit-icon svg { width: 22px; height: 22px; fill: var(--clr-primary); }
+.benefit-text h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--clr-dark);
+  margin-bottom: 0.2rem;
+}
+.benefit-text p {
+  font-size: 0.88rem;
+  color: var(--clr-text-light);
+  line-height: 1.5;
+}
+
+/* ── Service Area ──────────────────────────── */
+.area-section { background: var(--clr-white); }
+.area-box {
+  background: linear-gradient(135deg, #eaf2f8, #d6eaf8);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.area-pin {
+  width: 56px;
+  height: 56px;
+  background: var(--clr-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area-pin svg { width: 28px; height: 28px; fill: var(--clr-white); }
+.area-box h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--clr-dark);
+}
+.area-box p {
+  color: var(--clr-text-light);
+  font-size: 0.95rem;
+  max-width: 480px;
+  line-height: 1.55;
+}
+
+/* ── Contact ───────────────────────────────── */
+.contact-section { background: var(--clr-bg); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+.contact-card {
+  background: var(--clr-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--clr-text);
+  transition: box-shadow 0.2s, transform 0.15s;
+  display: block;
+}
+.contact-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.contact-card .cc-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(26,82,118,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+}
+.contact-card .cc-icon svg { width: 22px; height: 22px; fill: var(--clr-primary); }
+.contact-card .cc-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--clr-text-light);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.contact-card .cc-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+
+/* ── Footer ────────────────────────────────── */
+.site-footer {
+  background: var(--clr-dark);
+  color: rgba(255,255,255,0.6);
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer-inner {
+  width: var(--container);
+  margin: 0 auto;
+}
+.footer-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--clr-white);
+  margin-bottom: 0.5rem;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+.footer-links a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--clr-accent); }
+.footer-copy {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.4);
+}
+
+/* ── Desktop ───────────────────────────────── */
+@media (min-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1fr 400px;
+    gap: 3rem;
+    align-items: center;
+    padding: 4rem 0 4.5rem;
+  }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .trust-grid { grid-template-columns: repeat(4, 1fr); }
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(4, 1fr); }
+  .hero-inner {
+    grid-template-columns: 1fr 420px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ─── Header ──────────────────────────────────── -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo" aria-label="Spray Foam Services Home">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
+      </div>
+      <span class="logo-text">Spray Foam Services</span>
+    </a>
+    <a href="tel:+12183820423" class="header-phone" aria-label="Call us">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+      (218) 382-0423
+    </a>
+  </div>
+</header>
+
+<!-- ─── Hero ────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="eyebrow">
+        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        Fully Insured &bull; Serving All of Minnesota
+      </div>
+      <h1>Professional <span>Spray Foam</span> Insulation You Can Trust</h1>
+      <p class="hero-sub">Save up to 50% on your energy bill with the best insulation on the market. Closed cell spray foam specialists for Minnesota's climate.</p>
+      <div class="trust-inline">
+        <div class="stars" aria-label="4.6 out of 5 stars">★★★★★</div>
+        <span class="trust-text"><strong>4.6</strong> rating &middot; <strong>9</strong> Google reviews</span>
+      </div>
+      <a href="tel:+12183820423" class="hero-cta">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+        Call Now — Free Estimate
+      </a>
+    </div>
+
+    <div class="lead-card">
+      <form id="leadForm" novalidate>
+        <h2>Get Your Free Quote</h2>
+        <p class="card-sub">Fill out the form and we'll get back to you quickly.</p>
+        <label for="lf-name">Full Name</label>
+        <input type="text" id="lf-name" placeholder="John Smith" autocomplete="name" required>
+        <label for="lf-phone">Phone Number</label>
+        <input type="tel" id="lf-phone" placeholder="(218) 555-1234" autocomplete="tel" required>
+        <label for="lf-email">Email Address</label>
+        <input type="email" id="lf-email" placeholder="john@example.com" autocomplete="email" required>
+        <button type="submit" class="btn-submit">Get My Free Quote →</button>
+        <p class="form-note">🔒 No spam. Your info stays private.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  this.innerHTML='<div class="form-success"><div class="check-circle"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><h3>Thank You!</h3><p>Thanks — we\'ll be in touch shortly!</p></div>';
+});
+</script>
+
+<!-- ─── Services ────────────────────────────────── -->
+<section class="section services-section" id="services">
+  <div class="section-inner">
+    <div class="section-label">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+      What We Do
+    </div>
+    <h2 class="section-title">Our Insulation Services</h2>
+    <p class="section-subtitle">We offer insulation installation for all types of buildings — new construction and remodeling.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+        </div>
+        <h3>Closed Cell Spray Foam</h3>
+        <p>Our specialty — closed cell spray foam delivers the highest R-value per inch, ideal for Minnesota's demanding climate zone.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
+        </div>
+        <h3>New Construction Insulation</h3>
+        <p>Get your new build insulated right from the start. We work with builders and homeowners on projects of all sizes.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </div>
+        <h3>Remodel Insulation</h3>
+        <p>Upgrading your existing space? We install insulation during remodeling projects to improve energy efficiency and comfort.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12z"/></svg>
+        </div>
+        <h3>All Insulation Types</h3>
+        <p>Beyond spray foam, we offer installation of all types of insulation to match your project needs and budget.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Trust Bar ───────────────────────────────── -->
+<section class="section trust-section">
+  <div class="section-inner">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-number"><span class="star-color">★</span> 4.6</div>
+        <div class="trust-desc">Google Rating</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">9</div>
+        <div class="trust-desc">Verified Google Reviews</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">50%</div>
+        <div class="trust-desc">Potential Energy Savings</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">✓</div>
+        <div class="trust-desc"><strong>Fully Insured</strong> Contractor</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Benefits ────────────────────────────────── -->
+<section class="section benefits-section">
+  <div class="section-inner">
+    <div class="section-label">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.83L19.53 19H4.47L12 5.83zM11 16h2v2h-2zm0-6h2v4h-2z"/></svg>
+      Why Choose Us
+    </div>
+    <h2 class="section-title">Why Spray Foam Services?</h2>
+    <p class="section-subtitle">We're a dedicated, fully insured team that adapts to the specific needs of each customer.</p>
+
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <h3>Fully Insured</h3>
+          <p>Work with confidence knowing you're protected. We carry full insurance coverage on every job.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <h3>Energy Savings</h3>
+          <p>Our customers can save up to 50% on their energy bills with high-performance spray foam insulation.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <h3>Climate-Zone Experts</h3>
+          <p>We specialize in closed cell spray foam — the best option for Minnesota's cold winters and demanding climate.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M18.92 6.01A1 1 0 0018 5.5H6a1 1 0 00-.92.51l-3 5.5a1 1 0 00.09 1.05l8 10a1.25 1.25 0 001.66 0l8-10a1 1 0 00.09-1.05l-3-5.5zM12 19.58L5.24 12h13.52L12 19.58z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <h3>All Building Types</h3>
+          <p>Residential or commercial, new construction or remodel — we install insulation for all types of buildings.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Service Area ────────────────────────────── -->
+<section class="section area-section" id="area">
+  <div class="section-inner">
+    <div class="section-label">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+      Coverage Area
+    </div>
+    <h2 class="section-title">Where We Work</h2>
+    <p class="section-subtitle">Based in Mahtowa, about 35 minutes south of Duluth — we travel all around Minnesota.</p>
+    <div class="area-box">
+      <div class="area-pin">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+      </div>
+      <h3>Central to Northern Minnesota &amp; Surrounding Areas</h3>
+      <p>Our home base is in Mahtowa, MN (Carlton County), giving us convenient access to Duluth, the Iron Range, and communities throughout central and northern Minnesota. We travel all around the state to bring you top-quality insulation installation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Contact ─────────────────────────────────── -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <div class="section-label">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Get In Touch
+    </div>
+    <h2 class="section-title">Contact Us Today</h2>
+    <p class="section-subtitle">We adapt all of our services to the specific needs of each of our customers. Reach out anytime.</p>
+
+    <div class="contact-grid">
+      <a href="tel:+12183820423" class="contact-card">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+        </div>
+        <div class="cc-label">Phone</div>
+        <div class="cc-value">(218) 382-0423</div>
+      </a>
+      <a href="mailto:koecherjames@gmail.com" class="contact-card">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <div class="cc-label">Email</div>
+        <div class="cc-value">koecherjames@gmail.com</div>
+      </a>
+      <div class="contact-card">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+        </div>
+        <div class="cc-label">Address</div>
+        <div class="cc-value" style="font-size:0.88rem;">2457 Town Rd 279, Mahtowa, MN 55707</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ──────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">Spray Foam Services</div>
+    <div class="footer-links">
+      <a href="tel:+12183820423">(218) 382-0423</a>
+      <a href="mailto:koecherjames@gmail.com">Email Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-copy">&copy; 2024 Spray Foam Services &bull; Mahtowa, MN &bull; All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
