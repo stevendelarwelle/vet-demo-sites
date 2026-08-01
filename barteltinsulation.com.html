@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Bartelt Insulation Supply Inc. — Mechanical Insulation Contractors Since 1944</title>
+<style>
+:root {
+  --navy: #0B1D3A;
+  --navy-light: #122850;
+  --blue: #1A6BB5;
+  --blue-light: #2B8CD6;
+  --accent: #E8A225;
+  --accent-hover: #D4911C;
+  --white: #FFFFFF;
+  --off-white: #F4F6F9;
+  --gray-100: #E9ECF0;
+  --gray-200: #D1D5DB;
+  --gray-500: #6B7280;
+  --gray-700: #374151;
+  --gray-900: #111827;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.18);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --max-width: 1200px;
+  --header-h: 70px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--gray-900);
+  line-height: 1.6;
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Fluid Type ─── */
+h1 { font-size: clamp(1.85rem, 4vw + 0.5rem, 3rem); line-height: 1.15; font-weight: 800; }
+h2 { font-size: clamp(1.5rem, 3vw + 0.3rem, 2.25rem); line-height: 1.2; font-weight: 700; }
+h3 { font-size: clamp(1.1rem, 1.5vw + 0.3rem, 1.35rem); line-height: 1.3; font-weight: 600; }
+p { font-size: clamp(0.95rem, 1vw + 0.2rem, 1.05rem); }
+
+/* ─── Sticky Header ─── */
+.header {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--navy);
+  height: var(--header-h);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.header-inner {
+  width: 100%; max-width: var(--max-width);
+  padding: 0 clamp(1rem, 3vw, 2rem);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo {
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none; color: var(--white);
+}
+.logo-icon {
+  width: 40px; height: 40px; border-radius: 8px;
+  background: linear-gradient(135deg, var(--blue), var(--accent));
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 1.1rem; color: var(--white);
+}
+.logo-text { font-weight: 700; font-size: 1.1rem; letter-spacing: -0.3px; }
+.logo-text span { color: var(--accent); }
+.header-phone {
+  display: flex; align-items: center; gap: 8px;
+  color: var(--white); text-decoration: none;
+  font-weight: 600; font-size: 0.95rem;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 16px; border-radius: 50px;
+  transition: background 0.2s;
+}
+.header-phone:hover { background: rgba(255,255,255,0.2); }
+.header-phone svg { flex-shrink: 0; }
+
+/* ─── Hero ─── */
+.hero {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 60%, #1a3a6b 100%);
+  position: relative; overflow: hidden;
+  padding: clamp(2rem, 5vw, 5rem) clamp(1rem, 3vw, 2rem);
+  padding-top: clamp(2.5rem, 5vw, 4rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+.hero::before {
+  content: '';
+  position: absolute; top: -40%; right: -20%;
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(26,107,181,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute; bottom: -30%; left: -10%;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(232,162,37,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: var(--max-width); margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2rem, 4vw, 3rem);
+  position: relative; z-index: 1;
+}
+@media (min-width: 800px) {
+  .hero-inner {
+    grid-template-columns: 1fr 420px;
+    align-items: center;
+  }
+}
+
+/* Hero Left */
+.hero-content { color: var(--white); }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(232,162,37,0.15);
+  border: 1px solid rgba(232,162,37,0.3);
+  color: var(--accent);
+  font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 14px; border-radius: 50px;
+  margin-bottom: 1.25rem;
+}
+.hero-content h1 { margin-bottom: 1rem; }
+.hero-content h1 span { color: var(--accent); }
+.hero-subhead {
+  font-size: clamp(1rem, 1.5vw + 0.2rem, 1.2rem);
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 1.5rem;
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+/* Trust stat */
+.trust-stat {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 50px; padding: 8px 18px;
+  margin-bottom: 1.75rem;
+}
+.stars { color: var(--accent); font-size: 1.1rem; letter-spacing: 2px; }
+.trust-stat-text { color: rgba(255,255,255,0.8); font-size: 0.88rem; font-weight: 500; }
+.trust-stat-text strong { color: var(--white); }
+
+/* CTA Button */
+.btn-cta {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--accent); color: var(--navy);
+  font-size: 1.05rem; font-weight: 700;
+  padding: 14px 32px; border-radius: 50px;
+  text-decoration: none; border: none; cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 15px rgba(232,162,37,0.3);
+}
+.btn-cta:hover { background: var(--accent-hover); transform: translateY(-1px); }
+
+/* Hero Form Card */
+.form-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+.form-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 5px; border-radius: var(--radius) var(--radius) 0 0;
+  background: linear-gradient(90deg, var(--blue), var(--accent));
+}
+.form-card h3 {
+  color: var(--gray-900); margin-bottom: 0.4rem;
+  font-size: 1.25rem;
+}
+.form-card .form-subtitle {
+  color: var(--gray-500); font-size: 0.88rem; margin-bottom: 1.25rem;
+}
+.form-group { margin-bottom: 1rem; }
+.form-group label {
+  display: block; font-size: 0.82rem; font-weight: 600;
+  color: var(--gray-700); margin-bottom: 4px;
+}
+.form-group input {
+  width: 100%; padding: 11px 14px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem; color: var(--gray-900);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: var(--off-white);
+  font-family: inherit;
+}
+.form-group input:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(26,107,181,0.12);
+  background: var(--white);
+}
+.form-group input::placeholder { color: var(--gray-500); }
+.btn-submit {
+  width: 100%; padding: 14px;
+  background: var(--blue); color: var(--white);
+  font-size: 1.05rem; font-weight: 700;
+  border: none; border-radius: var(--radius-sm);
+  cursor: pointer; transition: background 0.2s, transform 0.15s;
+  font-family: inherit;
+  margin-top: 0.25rem;
+}
+.btn-submit:hover { background: var(--blue-light); transform: translateY(-1px); }
+.form-fine {
+  text-align: center; font-size: 0.75rem;
+  color: var(--gray-500); margin-top: 0.75rem;
+}
+.form-success {
+  text-align: center; padding: 2rem 1rem;
+}
+.form-success .check-icon {
+  width: 56px; height: 56px; margin: 0 auto 1rem;
+  background: linear-gradient(135deg, #10B981, #059669);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+}
+.form-success h3 { color: var(--gray-900); margin-bottom: 0.5rem; }
+.form-success p { color: var(--gray-500); font-size: 0.95rem; }
+
+/* ─── Section Base ─── */
+.section {
+  padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 3vw, 2rem);
+}
+.section-inner { max-width: var(--max-width); margin: 0 auto; }
+.section-header {
+  text-align: center; margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+.section-header .label {
+  display: inline-block;
+  font-size: 0.78rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: var(--blue); margin-bottom: 0.75rem;
+}
+.section-header p {
+  color: var(--gray-500); max-width: 600px;
+  margin: 0.75rem auto 0;
+}
+
+/* ─── Services ─── */
+.services-section { background: var(--off-white); }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.25s, transform 0.2s;
+  border: 1px solid var(--gray-100);
+}
+.service-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+.service-icon {
+  width: 48px; height: 48px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.service-icon.si-1 { background: rgba(26,107,181,0.1); color: var(--blue); }
+.service-icon.si-2 { background: rgba(232,162,37,0.1); color: var(--accent); }
+.service-icon.si-3 { background: rgba(16,185,129,0.1); color: #10B981; }
+.service-icon.si-4 { background: rgba(139,92,246,0.1); color: #8B5CF6; }
+.service-icon.si-5 { background: rgba(239,68,68,0.1); color: #EF4444; }
+.service-icon.si-6 { background: rgba(6,182,212,0.1); color: #06B6D4; }
+.service-icon.si-7 { background: rgba(245,158,11,0.1); color: #F59E0B; }
+.service-icon.si-8 { background: rgba(99,102,241,0.1); color: #6366F1; }
+.service-card h3 { margin-bottom: 0.5rem; font-size: 1.1rem; }
+.service-card p { color: var(--gray-500); font-size: 0.9rem; line-height: 1.55; }
+
+/* ─── Capabilities ─── */
+.capabilities-section { background: var(--white); }
+.cap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.cap-item {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--off-white);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  font-size: 0.92rem; font-weight: 500;
+  color: var(--gray-700);
+  border: 1px solid var(--gray-100);
+}
+.cap-check {
+  flex-shrink: 0;
+  width: 22px; height: 22px;
+  background: rgba(16,185,129,0.1);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #10B981; font-size: 0.75rem; font-weight: 800;
+}
+
+/* ─── Trust Bar ─── */
+.trust-section {
+  background: linear-gradient(160deg, var(--navy), var(--navy-light));
+  color: var(--white);
+}
+.trust-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+.trust-item {}
+.trust-number {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800; line-height: 1.1;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.trust-label {
+  font-size: 0.9rem; color: rgba(255,255,255,0.7);
+  font-weight: 500;
+}
+.trust-stars-block { margin-top: 0.3rem; }
+.trust-stars-block .stars { font-size: 1.3rem; }
+
+/* ─── Service Area ─── */
+.area-section { background: var(--off-white); }
+.area-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+@media (min-width: 700px) {
+  .area-content { grid-template-columns: 1fr 1fr; }
+}
+.area-map {
+  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+  border-radius: var(--radius);
+  padding: clamp(2rem, 4vw, 3rem);
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; text-align: center;
+  min-height: 260px; position: relative; overflow: hidden;
+}
+.area-map::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(26,107,181,0.2) 0%, transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(232,162,37,0.1) 0%, transparent 50%);
+}
+.area-map-pin {
+  font-size: 3rem; margin-bottom: 0.75rem;
+  position: relative; z-index: 1;
+}
+.area-map-label {
+  color: var(--white); font-weight: 700;
+  font-size: 1.2rem; position: relative; z-index: 1;
+}
+.area-map-sub {
+  color: rgba(255,255,255,0.6); font-size: 0.88rem;
+  margin-top: 0.3rem; position: relative; z-index: 1;
+}
+.area-text h2 { margin-bottom: 1rem; }
+.area-text p { color: var(--gray-500); margin-bottom: 1rem; }
+.area-regions {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;
+}
+.area-tag {
+  background: var(--white); border: 1px solid var(--gray-200);
+  border-radius: 50px; padding: 6px 16px;
+  font-size: 0.82rem; font-weight: 600; color: var(--gray-700);
+}
+
+/* ─── Contact Section ─── */
+.contact-section { background: var(--white); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 700px) {
+  .contact-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+.contact-card {
+  text-align: center;
+  background: var(--off-white);
+  border-radius: var(--radius);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border: 1px solid var(--gray-100);
+}
+.contact-card-icon {
+  width: 56px; height: 56px; margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem;
+}
+.cci-phone { background: rgba(26,107,181,0.1); color: var(--blue); }
+.cci-email { background: rgba(232,162,37,0.1); color: var(--accent); }
+.cci-location { background: rgba(16,185,129,0.1); color: #10B981; }
+.contact-card h3 { margin-bottom: 0.5rem; font-size: 1rem; }
+.contact-card a {
+  color: var(--blue); text-decoration: none; font-weight: 600;
+  font-size: 0.95rem;
+}
+.contact-card a:hover { text-decoration: underline; }
+.contact-card p { color: var(--gray-500); font-size: 0.9rem; }
+
+/* ─── Footer ─── */
+.footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.5);
+  padding: 2rem clamp(1rem, 3vw, 2rem);
+  text-align: center; font-size: 0.82rem;
+}
+.footer-inner {
+  max-width: var(--max-width); margin: 0 auto;
+  display: flex; flex-direction: column; align-items: center; gap: 0.75rem;
+}
+.footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+.footer a:hover { color: var(--white); }
+
+/* ─── Utility ─── */
+@media (max-width: 799px) {
+  .hero-inner { text-align: center; }
+  .hero-subhead { margin-left: auto; margin-right: auto; }
+  .trust-stat { justify-content: center; }
+  .btn-cta { width: 100%; justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">BI</div>
+      <div class="logo-text">Bartelt <span>Insulation</span></div>
+    </a>
+    <a href="tel:+19207336086" class="header-phone">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (920) 733-6086
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="eyebrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        Since 1944 — Four Generations of Excellence
+      </div>
+      <h1>Professional <span>Mechanical Insulation</span> Contractors</h1>
+      <p class="hero-subhead">Full-service commercial, industrial &amp; refrigeration insulation projects — completed safely, on time, and on budget by skilled union tradespeople.</p>
+      <div class="trust-stat">
+        <span class="stars">★★★★★</span>
+        <span class="trust-stat-text"><strong>5.0</strong> rating · 5 Google Reviews</span>
+      </div>
+      <a href="tel:+19207336086" class="btn-cta">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call (920) 733-6086
+      </a>
+    </div>
+
+    <div class="form-card" id="formCard">
+      <form id="leadForm" onsubmit="return false;">
+        <h3>Get a Free Quote</h3>
+        <p class="form-subtitle">Tell us about your project — we'll respond quickly.</p>
+        <div class="form-group">
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" placeholder="John Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="fphone">Phone Number</label>
+          <input type="tel" id="fphone" placeholder="(555) 123-4567" required>
+        </div>
+        <div class="form-group">
+          <label for="femail">Email Address</label>
+          <input type="email" id="femail" placeholder="john@company.com" required>
+        </div>
+        <button type="submit" class="btn-submit">Get My Free Quote →</button>
+        <p class="form-fine">No spam · Respond within 1 business day</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services-section" id="services">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">Our Services</div>
+      <h2>Comprehensive Insulation Solutions</h2>
+      <p>From industrial piping to custom blankets, we deliver tailored insulation systems for every application.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon si-1">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/></svg>
+        </div>
+        <h3>Pipe &amp; Tank Insulation</h3>
+        <p>Industrial pipe insulation and tank/boiler insulation for energy conservation, temperature retention, and freeze protection.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon si-2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Custom Removable Blankets</h3>
+        <p>Custom sewn removable insulation blankets for valve covers, pump housings, heat exchangers, steam &amp; gas turbines, and extruders.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon si-3">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+        </div>
+        <h3>Ductwork Insulation</h3>
+        <p>Professional ductwork insulation for commercial and industrial HVAC systems to maximize energy efficiency and climate control.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon si-4">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Cold-Storage Insulation</h3>
+        <p>Specialized insulation for refrigerated dairy operations, food processing facilities, and cold-storage environments.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon si-5">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r=".5"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <h3>Energy Audits</h3>
+        <p>Industrial energy audits to identify insulation deficiencies, reduce greenhouse gas emissions, and cut operational costs.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon si-6">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M5.636 5.636l12.728 12.728M3 12h18M5.636 18.364L18.364 5.636"/></svg>
+        </div>
+        <h3>Noise-Control Panels</h3>
+        <p>Sound absorption blankets and noise-control panel systems for industrial environments requiring acoustic management.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon si-7">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+        </div>
+        <h3>Firestop Systems</h3>
+        <p>Professional firestop installation to maintain fire-rated assemblies and ensure code compliance in commercial and industrial facilities.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon si-8">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 7h-3a2 2 0 0 1-2-2V2"/><path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h5l6 6v8a2 2 0 0 1-2 2z"/><path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8"/></svg>
+        </div>
+        <h3>In-Plant Maintenance &amp; Material Sales</h3>
+        <p>Ongoing MIC group preventative maintenance programs, plus a large inventory of insulation materials for quick-response supply needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="section capabilities-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">Capabilities</div>
+      <h2>Industries &amp; Applications We Serve</h2>
+      <p>Decades of expertise across a wide range of demanding insulation applications.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap-item"><span class="cap-check">✓</span> Pulp &amp; Paper Industry</div>
+      <div class="cap-item"><span class="cap-check">✓</span> Plastics Industry</div>
+      <div class="cap-item"><span class="cap-check">✓</span> Food Processing</div>
+      <div class="cap-item"><span class="cap-check">✓</span> Refrigerated Dairy Operations</div>
+      <div class="cap-item"><span class="cap-check">✓</span> Marine Insulation</div>
+      <div class="cap-item"><span class="cap-check">✓</span> High Temperature Insulation</div>
+      <div class="cap-item"><span class="cap-check">✓</span> Polystyrene &amp; Polyisocyanurate Foams</div>
+      <div class="cap-item"><span class="cap-check">✓</span> Insulated Panels</div>
+      <div class="cap-item"><span class="cap-check">✓</span> DEF Pumps &amp; Exhaust Systems</div>
+      <div class="cap-item"><span class="cap-check">✓</span> New Construction &amp; Remodeling</div>
+      <div class="cap-item"><span class="cap-check">✓</span> Condensation Control</div>
+      <div class="cap-item"><span class="cap-check">✓</span> Burn Protection for Workers</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="section trust-section" id="trust">
+  <div class="section-inner">
+    <div class="trust-bar">
+      <div class="trust-item">
+        <div class="trust-number">80+</div>
+        <div class="trust-label">Years in Business</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">4</div>
+        <div class="trust-label">Generations of Bartelt Family</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-stars-block">
+          <div class="trust-number">5.0</div>
+          <span class="stars">★★★★★</span>
+        </div>
+        <div class="trust-label">Google Rating (5 Reviews)</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">3</div>
+        <div class="trust-label">States Served</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section area-section" id="area">
+  <div class="section-inner">
+    <div class="area-content">
+      <div class="area-map">
+        <div class="area-map-pin">📍</div>
+        <div class="area-map-label">Appleton, Wisconsin</div>
+        <div class="area-map-sub">3117 N. Marshall Rd, Appleton, WI 54911</div>
+      </div>
+      <div class="area-text">
+        <h2>Serving the Upper Midwest</h2>
+        <p>Based in Appleton, Wisconsin, Bartelt Insulation serves businesses and industries throughout Wisconsin, Upper Michigan, and Northern Illinois. Our large inventory and experienced team enable quick response times for projects of any scale.</p>
+        <p>No matter how large or complex the project, our skilled union tradespeople are ready to help.</p>
+        <div class="area-regions">
+          <span class="area-tag">Wisconsin</span>
+          <span class="area-tag">Upper Michigan</span>
+          <span class="area-tag">Northern Illinois</span>
+          <span class="area-tag">Appleton</span>
+          <span class="area-tag">Fox Valley</span>
+          <span class="area-tag">Green Bay</span>
+          <span class="area-tag">Milwaukee</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">Get in Touch</div>
+      <h2>Ready to Start Your Project?</h2>
+      <p>Contact us today for a consultation or quote. We respond quickly to every inquiry.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card-icon cci-phone">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3>Phone</h3>
+        <a href="tel:+19207336086">(920) 733-6086</a>
+        <p style="margin-top:0.25rem;font-size:0.82rem;color:var(--gray-500);">Toll Free: 800-788-1</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon cci-email">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+        </div>
+        <h3>Email</h3>
+        <a href="mailto:sales@barteltinsulation.com">sales@barteltinsulation.com</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon cci-location">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Location</h3>
+        <p>3117 N. Marshall Rd.<br>Appleton, WI 54911</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>&copy; Bartelt Insulation Supply Inc. · Appleton, WI · <a href="tel:+19207336086">(920) 733-6086</a> · <a href="mailto:sales@barteltinsulation.com">sales@barteltinsulation.com</a></p>
+    <p style="font-size:0.75rem;color:rgba(255,255,255,0.3);">This is a website design preview — not the official site of Bartelt Insulation.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.getElementById('formCard').innerHTML = '<div class="form-success"><div class="check-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div><h3>Thank You!</h3><p>Thanks — we\'ll be in touch shortly!</p></div>';
+});
+</script>
+
+</body>
+</html>
