@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Quality Foam & Fiber LLC — Spray Foam & Insulation Services | Owen, WI</title>
+<style>
+:root {
+  --color-primary: #1a5632;
+  --color-primary-dark: #0e3a20;
+  --color-primary-light: #2a7a4a;
+  --color-accent: #e8a620;
+  --color-accent-dark: #c98e18;
+  --color-bg: #f7f8f6;
+  --color-white: #ffffff;
+  --color-text: #2c2c2c;
+  --color-text-light: #5a5a5a;
+  --color-text-muted: #888888;
+  --color-border: #e0e2de;
+  --color-card: #ffffff;
+  --color-hero-bg: #0f2e1c;
+  --color-hero-text: #f0f4ef;
+  --color-section-alt: #f0f2ed;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.18);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --max-width: 1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* STICKY HEADER */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--color-primary-dark);
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-icon svg { width: 22px; height: 22px; }
+
+.logo-text {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logo-text span {
+  display: block;
+  font-size: 0.7em;
+  font-weight: 400;
+  color: var(--color-text-light);
+  letter-spacing: 0.02em;
+}
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 0.55rem 1.1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 1.8vw, 0.95rem);
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.header-phone:hover { background: var(--color-primary-dark); }
+
+.header-phone svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+/* HERO */
+.hero {
+  background: var(--color-hero-bg);
+  background-image:
+    radial-gradient(ellipse at 20% 80%, rgba(42,122,74,0.25) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(232,166,32,0.1) 0%, transparent 50%),
+    linear-gradient(175deg, #0f2e1c 0%, #162f20 40%, #1a3826 100%);
+  color: var(--color-hero-text);
+  padding: clamp(2.5rem, 6vw, 5rem) 1.25rem clamp(3rem, 7vw, 5.5rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(232,166,32,0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 800px) {
+  .hero-inner {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3.5rem;
+  }
+}
+
+/* Hero Left */
+.hero-content { order: 1; }
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(232,166,32,0.15);
+  border: 1px solid rgba(232,166,32,0.3);
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.25rem;
+}
+
+.hero-badge svg { width: 14px; height: 14px; }
+
+.hero-h1 {
+  font-size: clamp(1.85rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.12;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-h1 em {
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: rgba(240,244,239,0.75);
+  margin-bottom: 1.5rem;
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.hero-stars {
+  display: flex;
+  gap: 2px;
+  color: var(--color-accent);
+}
+
+.hero-stars svg { width: 18px; height: 18px; }
+
+.hero-rating-text {
+  font-size: 0.92rem;
+  color: rgba(240,244,239,0.8);
+}
+
+.hero-rating-text strong {
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-accent);
+  color: var(--color-hero-bg);
+  text-decoration: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 20px rgba(232,166,32,0.3);
+}
+
+.hero-cta:hover {
+  background: var(--color-accent-dark);
+  transform: translateY(-1px);
+}
+
+.hero-cta svg { width: 18px; height: 18px; }
+
+/* Hero Form */
+.hero-form-wrap {
+  order: 2;
+}
+
+.lead-form-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  box-shadow: var(--shadow-lg);
+  color: var(--color-text);
+  position: relative;
+}
+
+.lead-form-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.form-title {
+  font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--color-primary-dark);
+}
+
+.form-subtitle {
+  font-size: 0.88rem;
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(26,86,50,0.1);
+}
+
+.form-group input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-submit {
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  margin-top: 0.5rem;
+}
+
+.form-submit:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.form-note {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 0.75rem;
+}
+
+.form-note svg { width: 12px; height: 12px; vertical-align: -1px; margin-right: 2px; }
+
+.form-success {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.form-success .check-circle {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.form-success .check-circle svg { width: 28px; height: 28px; color: var(--color-white); }
+
+.form-success h3 {
+  font-size: 1.2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.4rem;
+}
+
+.form-success p {
+  font-size: 0.92rem;
+  color: var(--color-text-light);
+}
+
+/* SERVICES */
+.services {
+  padding: clamp(3rem, 7vw, 5.5rem) 1.25rem;
+  background: var(--color-white);
+}
+
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  color: var(--color-primary-dark);
+}
+
+.section-desc {
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  line-height: 1.55;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .services-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 900px) {
+  .services-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+.service-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+}
+
+.service-icon svg { width: 24px; height: 24px; color: var(--color-white); }
+
+.service-card h3 {
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-dark);
+}
+
+.service-card p {
+  font-size: 0.88rem;
+  color: var(--color-text-light);
+  line-height: 1.55;
+}
+
+.service-tag {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+  background: rgba(26,86,50,0.08);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* TRUST BAR */
+.trust-bar {
+  padding: clamp(2.5rem, 5vw, 4rem) 1.25rem;
+  background: var(--color-section-alt);
+}
+
+.trust-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.trust-inner .section-title {
+  margin-bottom: 0.3rem;
+}
+
+.trust-inner .section-desc {
+  margin: 0 auto 2.5rem;
+}
+
+.trust-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.trust-stat {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 2rem;
+  min-width: 200px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+}
+
+.trust-stat .stat-number {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.trust-stat .stat-label {
+  font-size: 0.88rem;
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+
+.trust-stars {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 0.4rem;
+  color: var(--color-accent);
+}
+
+.trust-stars svg { width: 22px; height: 22px; }
+
+.google-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+
+.google-badge svg { width: 18px; height: 18px; }
+
+/* SERVICE AREA */
+.service-area {
+  padding: clamp(3rem, 7vw, 5rem) 1.25rem;
+  background: var(--color-white);
+}
+
+.area-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .area-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.area-map-placeholder {
+  background: linear-gradient(135deg, #e8ecdf, #d4daca);
+  border-radius: var(--radius-md);
+  height: clamp(220px, 30vw, 320px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.area-map-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 30px, rgba(26,86,50,0.04) 30px, rgba(26,86,50,0.04) 31px),
+    repeating-linear-gradient(90deg, transparent, transparent 30px, rgba(26,86,50,0.04) 30px, rgba(26,86,50,0.04) 31px);
+}
+
+.area-map-placeholder svg {
+  width: 48px;
+  height: 48px;
+  opacity: 0.5;
+  position: relative;
+  z-index: 1;
+}
+
+.area-map-placeholder span {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  opacity: 0.6;
+  position: relative;
+  z-index: 1;
+}
+
+.area-text h3 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.area-text p {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.area-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.area-detail svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+
+.area-detail span {
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+/* CONTACT */
+.contact {
+  padding: clamp(3rem, 7vw, 5rem) 1.25rem;
+  background: var(--color-hero-bg);
+  color: var(--color-hero-text);
+}
+
+.contact .section-eyebrow { color: var(--color-accent); }
+.contact .section-title { color: var(--color-white); }
+.contact .section-desc { color: rgba(240,244,239,0.7); }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 650px) {
+  .contact-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.contact-card:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.contact-card-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(232,166,32,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.9rem;
+}
+
+.contact-card-icon svg { width: 20px; height: 20px; color: var(--color-accent); }
+
+.contact-card h4 {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(240,244,239,0.55);
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.contact-card a,
+.contact-card p {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.contact-card a:hover { color: var(--color-accent); }
+
+.contact-card .hours {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgba(240,244,239,0.7);
+}
+
+/* FOOTER */
+.site-footer {
+  background: #091a10;
+  color: rgba(240,244,239,0.5);
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+  font-size: 0.82rem;
+}
+
+.site-footer p { margin-bottom: 0.25rem; }
+
+.site-footer a {
+  color: rgba(240,244,239,0.6);
+  text-decoration: none;
+}
+
+.site-footer a:hover { color: var(--color-accent); }
+
+/* Utility */
+@media (max-width: 799px) {
+  .hero-content { text-align: left; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo" aria-label="Quality Foam & Fiber LLC Home">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div class="logo-text">
+        Quality Foam &amp; Fiber
+        <span>Insulation Experts</span>
+      </div>
+    </a>
+    <a href="tel:+17157732422" class="header-phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (715) 773-2422
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Trusted Local Insulation Pros
+      </div>
+      <h1 class="hero-h1">Premium <em>Insulation</em> for Every Project</h1>
+      <p class="hero-sub">Spray foam, cellulose, and fiberglass insulation for residential, commercial, and agricultural buildings in Central Wisconsin.</p>
+      <div class="hero-trust">
+        <div class="hero-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" opacity="0.4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <span class="hero-rating-text"><strong>4.4</strong> rating &middot; 8 Google Reviews</span>
+      </div>
+      <a href="tel:+17157732422" class="hero-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Us Now
+      </a>
+    </div>
+
+    <div class="hero-form-wrap">
+      <div class="lead-form-card">
+        <h2 class="form-title">Get Your Free Quote</h2>
+        <p class="form-subtitle">Fill out the form and we'll get back to you promptly.</p>
+        <form id="leadForm">
+          <div class="form-group">
+            <label for="form-name">Full Name</label>
+            <input type="text" id="form-name" placeholder="John Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="form-phone">Phone Number</label>
+            <input type="tel" id="form-phone" placeholder="(715) 555-0123" required>
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email Address</label>
+            <input type="email" id="form-email" placeholder="john@example.com">
+          </div>
+          <button type="submit" class="form-submit">Get My Free Quote →</button>
+          <p class="form-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Your info is safe. No spam, ever.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <p class="section-eyebrow">◆ Our Services</p>
+    <h2 class="section-title">Complete Insulation Solutions</h2>
+    <p class="section-desc">From spray foam to cellulose and fiberglass, we install the right insulation for your project — residential, commercial, or agricultural.</p>
+
+    <div class="services-grid">
+      <!-- Spray Foam -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6m0 0l3-3m-3 3L9 5"/><rect x="4" y="10" width="16" height="12" rx="2"/><line x1="8" y1="14" x2="8" y2="18"/><line x1="12" y1="14" x2="12" y2="18"/><line x1="16" y1="14" x2="16" y2="18"/></svg>
+        </div>
+        <h3>Spray Polyurethane Foam (SPF)</h3>
+        <p>Closed cell spray foam delivers superior thermal performance, air isolation, and moisture control. Applied to wood, metal, masonry, sheet stock, and concrete.</p>
+        <span class="service-tag">Residential &amp; Commercial</span>
+      </div>
+
+      <!-- Open Cell Foam -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8m-4-4v8"/></svg>
+        </div>
+        <h3>Open Cell Foam — Sound Control</h3>
+        <p>Open cell spray foam for offices, interior walls, home theaters, apartments, and between floor levels. Effective at stopping noise transfer and old squeaky floors.</p>
+        <span class="service-tag">Sound Reduction</span>
+      </div>
+
+      <!-- Cellulose -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C17 5.24 14.76 3 12 3S7 5.24 7 8c0 3 5 8 5 8s5-5 5-8z"/><path d="M7 16l-4 4h18l-4-4"/><line x1="12" y1="22" x2="12" y2="19"/></svg>
+        </div>
+        <h3>Cellulose Insulation</h3>
+        <p>Wall-sprayed and stabilized attic cellulose using Applegate brand — made from 85% recycled paper fiber. Locks in place to eliminate dust and settling.</p>
+        <span class="service-tag">Eco-Friendly</span>
+      </div>
+
+      <!-- BIBS -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="9" rx="1"/><rect x="3" y="15" width="7" height="6" rx="1"/><rect x="14" y="15" width="7" height="6" rx="1"/></svg>
+        </div>
+        <h3>Fiberglass &amp; Mineral Wool</h3>
+        <p>BIBS (Blown Insulation Blanket System), blow-in attic insulation, and batts with poly. Brands include Owens Corning, Johns Manville, and Knauf Insulations.</p>
+        <span class="service-tag">Economical</span>
+      </div>
+
+      <!-- Residential -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Residential Projects</h3>
+        <p>New construction, retrofits, attics, walls, and between-floor insulation for homes of any size. Improve comfort and reduce energy costs year-round.</p>
+        <span class="service-tag">Homes</span>
+      </div>
+
+      <!-- Commercial/Ag -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="22" height="16" rx="2"/><path d="M1 10h22"/><path d="M6 6V2m12 4V2"/></svg>
+        </div>
+        <h3>Commercial &amp; Agricultural</h3>
+        <p>Insulation services for commercial buildings, offices, pole barns, and agricultural structures. Thermal and sound control solutions for every application.</p>
+        <span class="service-tag">All Building Types</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar">
+  <div class="trust-inner section-inner">
+    <p class="section-eyebrow">◆ Why Choose Us</p>
+    <h2 class="section-title">Trusted by Our Customers</h2>
+    <p class="section-desc">Quality work and dependable service for Central Wisconsin.</p>
+
+    <div class="trust-stats">
+      <div class="trust-stat">
+        <div class="trust-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" opacity="0.35"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="stat-number">4.4</div>
+        <div class="stat-label">Google Rating</div>
+      </div>
+      <div class="trust-stat">
+        <div class="stat-number" style="color: var(--color-primary-dark);">8</div>
+        <div class="stat-label">Google Reviews</div>
+      </div>
+      <div class="trust-stat">
+        <div class="stat-number" style="color: var(--color-accent-dark);">3+</div>
+        <div class="stat-label">Insulation Types Offered</div>
+      </div>
+    </div>
+
+    <div class="google-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Verified Google Business Profile
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="service-area" id="area">
+  <div class="section-inner">
+    <p class="section-eyebrow">◆ Service Area</p>
+    <h2 class="section-title">Serving Owen, WI &amp; Surrounding Areas</h2>
+    <div class="area-grid">
+      <div class="area-map-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Owen, WI &amp; Central Wisconsin</span>
+      </div>
+      <div class="area-text">
+        <h3>Central Wisconsin Insulation Experts</h3>
+        <p>Based in Owen, Wisconsin, Quality Foam &amp; Fiber LLC provides professional insulation services throughout Clark County and the surrounding Central Wisconsin region.</p>
+        <div class="area-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>W5588 County Rd N, Owen, WI 54460</span>
+        </div>
+        <div class="area-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Monday – Friday: 6:00 AM – 6:00 PM</span>
+        </div>
+        <div class="area-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Call: <a href="tel:+17157732422" style="color:var(--color-primary);font-weight:600;text-decoration:none;">(715) 773-2422</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <p class="section-eyebrow">◆ Get In Touch</p>
+    <h2 class="section-title">Ready to Start Your Project?</h2>
+    <p class="section-desc">Reach out today for a free insulation consultation.</p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h4>Phone</h4>
+        <a href="tel:+17157732422">(715) 773-2422</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h4>Email</h4>
+        <a href="mailto:qualityfoam9697@gmail.com">qualityfoam9697@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h4>Hours</h4>
+        <p class="hours">Mon – Fri<br>6:00 AM – 6:00 PM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>&copy; 2024 Quality Foam &amp; Fiber LLC. All rights reserved.</p>
+  <p>W5588 County Rd N, Owen, WI 54460 &middot; <a href="tel:+17157732422">(715) 773-2422</a></p>
+</footer>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  this.innerHTML = '<div class="form-success"><div class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3>Thank You!</h3><p>Thanks — we\'ll be in touch shortly!</p></div>';
+});
+</script>
+</body>
+</html>
