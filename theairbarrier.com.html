@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Accurate-Airtight Exteriors | Energy Savings Contractor — Madison, WI</title>
+<style>
+:root {
+  --color-primary: #1a5276;
+  --color-primary-dark: #0e3650;
+  --color-primary-light: #2980b9;
+  --color-accent: #e67e22;
+  --color-accent-hover: #d35400;
+  --color-bg: #f8f9fa;
+  --color-white: #ffffff;
+  --color-dark: #1a1a2e;
+  --color-text: #333344;
+  --color-text-light: #5a5a6e;
+  --color-border: #e0e4e8;
+  --color-success: #27ae60;
+  --color-star: #f1c40f;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.16);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --max-width: 1200px;
+}
+
+*, *::before, *::after {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Sticky Header ─── */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--color-primary-dark);
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-size: clamp(0.85rem, 2vw, 1.05rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logo-text span {
+  display: block;
+  font-weight: 400;
+  font-size: 0.7em;
+  color: var(--color-text-light);
+}
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 0.55rem 1.1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 1.8vw, 0.95rem);
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.header-phone:hover {
+  background: var(--color-primary-dark);
+}
+
+/* ─── Hero ─── */
+.hero {
+  background: linear-gradient(160deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, #1a6fa0 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 60%;
+  height: 140%;
+  background: radial-gradient(ellipse, rgba(255,255,255,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-star), var(--color-accent));
+}
+
+.hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 5rem) 1.25rem clamp(3rem, 7vw, 5.5rem);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1.15fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.hero-content {
+  color: var(--color-white);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.95);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hero-badge svg {
+  flex-shrink: 0;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1.5rem;
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+.hero-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.stars-visual {
+  display: flex;
+  gap: 2px;
+  color: var(--color-star);
+  font-size: 1.2rem;
+}
+
+.stars-text {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.stars-text strong {
+  color: var(--color-white);
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-accent);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 0.85rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 15px rgba(230,126,34,0.35);
+}
+
+.hero-cta:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-1px);
+}
+
+/* ─── Lead Form Card ─── */
+.lead-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.lead-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-star));
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.lead-card h2 {
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  color: var(--color-primary-dark);
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+}
+
+.lead-card .lead-sub {
+  font-size: 0.88rem;
+  color: var(--color-text-light);
+  margin-bottom: 1.25rem;
+}
+
+.form-group {
+  margin-bottom: 0.9rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  transition: border-color 0.2s;
+  background: var(--color-bg);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-primary-light);
+  background: var(--color-white);
+}
+
+.form-group input::placeholder {
+  color: #aab;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 0.85rem;
+  background: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 12px rgba(230,126,34,0.25);
+}
+
+.form-submit:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-1px);
+}
+
+.form-note {
+  font-size: 0.72rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+.form-note svg {
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
+.form-thanks {
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.form-thanks .check-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--color-success);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.form-thanks h3 {
+  color: var(--color-primary-dark);
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.form-thanks p {
+  color: var(--color-text-light);
+  font-size: 0.92rem;
+}
+
+/* ─── Section shared ─── */
+.section {
+  padding: clamp(3rem, 7vw, 5rem) 1.25rem;
+}
+
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary-light);
+  margin-bottom: 0.6rem;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  color: var(--color-primary-dark);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.section-subtitle {
+  color: var(--color-text-light);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  max-width: 620px;
+  margin-bottom: 2.5rem;
+}
+
+/* ─── Services ─── */
+.services-bg {
+  background: var(--color-white);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.si-blue { background: rgba(26,82,118,0.1); color: var(--color-primary); }
+.si-orange { background: rgba(230,126,34,0.12); color: var(--color-accent); }
+.si-green { background: rgba(39,174,96,0.1); color: var(--color-success); }
+.si-teal { background: rgba(22,160,133,0.1); color: #16a085; }
+
+.service-card h3 {
+  font-size: 1.05rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+.service-card p {
+  font-size: 0.88rem;
+  color: var(--color-text-light);
+  line-height: 1.55;
+}
+
+/* ─── Trust Bar ─── */
+.trust-section {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  color: var(--color-white);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.trust-item {
+  padding: 1.5rem 1rem;
+}
+
+.trust-number {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.trust-number .accent {
+  color: var(--color-accent);
+}
+
+.trust-label {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  margin-top: 0.3rem;
+}
+
+/* ─── Service Area ─── */
+.area-section {
+  background: var(--color-white);
+}
+
+.area-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .area-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.area-map {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #e8eef3 0%, #d5dde5 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.area-map-pin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.area-map-pin svg {
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+
+.area-map-pin span {
+  background: var(--color-white);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--color-primary-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.area-map-circles {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px dashed rgba(26,82,118,0.15);
+}
+
+.area-map-circles:nth-child(2) {
+  width: 300px;
+  height: 300px;
+}
+
+.area-details h3 {
+  font-size: 1.3rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.area-details p {
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.area-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  background: var(--color-bg);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.area-address svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ─── Contact ─── */
+.contact-section {
+  background: var(--color-bg);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  text-align: center;
+  border: 1px solid var(--color-border);
+  transition: box-shadow 0.2s;
+}
+
+.contact-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.contact-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(26,82,118,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.contact-card h3 {
+  font-size: 1rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.contact-card p {
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.contact-link:hover {
+  color: var(--color-accent);
+}
+
+/* ─── Footer ─── */
+.footer {
+  background: var(--color-primary-dark);
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 2rem 1.25rem;
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+
+.footer strong {
+  color: rgba(255,255,255,0.85);
+}
+
+.footer a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--color-accent);
+}
+
+/* ─── Utility ─── */
+@media (max-width: 767px) {
+  .hero-inner { padding-bottom: 2.5rem; }
+  .hero-content { text-align: left; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════ HEADER ════ -->
+<header class="header">
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <div class="logo-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div class="logo-text">Accurate-Airtight<span>Exteriors</span></div>
+    </a>
+    <a href="tel:+16084672008" class="header-phone">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (608) 467-2008
+    </a>
+  </div>
+</header>
+
+<!-- ════ HERO ════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        In Business Since 1998
+      </div>
+      <h1>It's Time to <em>Stop Energy Loss</em> in Your Building</h1>
+      <p class="hero-sub">Full-service energy savings contracting — insulation, air sealing, consulting, and testing for residential &amp; commercial buildings in Madison, WI.</p>
+      <div class="hero-stars">
+        <div class="stars-visual">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <div class="stars-text"><strong>4.9</strong> rating · <strong>73</strong> Google reviews</div>
+      </div>
+      <a href="tel:+16084672008" class="hero-cta">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Us Now
+      </a>
+    </div>
+
+    <div class="lead-card">
+      <h2>Get Your Free Quote</h2>
+      <p class="lead-sub">Tell us about your project — we'll be in touch fast.</p>
+      <form id="leadForm">
+        <div class="form-group">
+          <label for="leadName">Name</label>
+          <input type="text" id="leadName" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="leadPhone">Phone</label>
+          <input type="tel" id="leadPhone" placeholder="(555) 123-4567" required>
+        </div>
+        <div class="form-group">
+          <label for="leadEmail">Email</label>
+          <input type="email" id="leadEmail" placeholder="you@example.com" required>
+        </div>
+        <button type="submit" class="form-submit">Get My Free Quote →</button>
+        <p class="form-note">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Your information is private &amp; never shared.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ════ SERVICES ════ -->
+<section class="section services-bg" id="services">
+  <div class="section-inner">
+    <span class="section-label">Our Services</span>
+    <h2 class="section-title">Residential &amp; Commercial Solutions</h2>
+    <p class="section-subtitle">From concept to implementation — consulting, repair, and testing for existing and new construction buildings.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon si-blue">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Spray Foam Insulation</h3>
+        <p>High-performance spray foam insulation for superior thermal resistance and air sealing in walls, attics, and crawl spaces.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon si-orange">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+        </div>
+        <h3>Cellulose &amp; Wall Spray Insulation</h3>
+        <p>Dense packed and wall spray cellulose insulation solutions for both exterior walls and interior cavities.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon si-teal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Air Sealing &amp; Ice Dam Prevention</h3>
+        <p>Comprehensive air sealing to eliminate drafts and energy loss, plus solutions for ice dam prevention on your roof.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon si-green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Energy Audits &amp; Diagnostics</h3>
+        <p>Professional energy audits, infrared diagnostics, and home performance testing to pinpoint where you're losing energy.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon si-blue">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3>Commercial Air Barrier Testing &amp; Repair</h3>
+        <p>Blower door testing, air barrier consulting, and repair services for commercial and municipal buildings.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon si-orange">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3>Building Enclosure Consulting</h3>
+        <p>Expert building science consulting for multifamily, commercial, and municipal projects — ventilation, crawl spaces, radon, and more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ TRUST BAR ════ -->
+<section class="section trust-section">
+  <div class="section-inner">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-number">4.9<span class="accent">★</span></div>
+        <div class="trust-label">Google Rating</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">73<span class="accent">+</span></div>
+        <div class="trust-label">Verified Reviews</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">Since <span class="accent">'98</span></div>
+        <div class="trust-label">Serving Wisconsin</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">Res <span class="accent">&amp;</span> Com</div>
+        <div class="trust-label">Full-Service Solutions</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ ABOUT / MISSION ════ -->
+<section class="section services-bg">
+  <div class="section-inner">
+    <span class="section-label">About Us</span>
+    <h2 class="section-title">Working Smarter to Save You Energy &amp; Money</h2>
+    <p class="section-subtitle" style="max-width:720px;">A-AE employs project-specific building science solutions to consciously reduce energy consumption and increase savings in every residential and commercial project.</p>
+    <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:1rem;">
+      <div class="service-card" style="text-align:center; padding:1.25rem;">
+        <div style="font-size:1.8rem; margin-bottom:0.5rem;">✓</div>
+        <h3 style="font-size:0.95rem;">Quality</h3>
+      </div>
+      <div class="service-card" style="text-align:center; padding:1.25rem;">
+        <div style="font-size:1.8rem; margin-bottom:0.5rem;">✓</div>
+        <h3 style="font-size:0.95rem;">Honesty</h3>
+      </div>
+      <div class="service-card" style="text-align:center; padding:1.25rem;">
+        <div style="font-size:1.8rem; margin-bottom:0.5rem;">✓</div>
+        <h3 style="font-size:0.95rem;">Integrity</h3>
+      </div>
+      <div class="service-card" style="text-align:center; padding:1.25rem;">
+        <div style="font-size:1.8rem; margin-bottom:0.5rem;">✓</div>
+        <h3 style="font-size:0.95rem;">Communication</h3>
+      </div>
+      <div class="service-card" style="text-align:center; padding:1.25rem;">
+        <div style="font-size:1.8rem; margin-bottom:0.5rem;">✓</div>
+        <h3 style="font-size:0.95rem;">Sustainability</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ SERVICE AREA ════ -->
+<section class="section area-section" id="area">
+  <div class="section-inner">
+    <span class="section-label">Service Area</span>
+    <h2 class="section-title">Serving Madison, WI &amp; Surrounding Areas</h2>
+    <p class="section-subtitle">Proudly providing energy-saving solutions to homes and businesses throughout the greater Madison area.</p>
+
+    <div class="area-content">
+      <div class="area-map">
+        <div class="area-map-circles"></div>
+        <div class="area-map-circles" style="width:280px;height:280px;"></div>
+        <div class="area-map-pin">
+          <svg width="40" height="52" viewBox="0 0 40 52" fill="none">
+            <path d="M20 0C9 0 0 9 0 20c0 15 20 32 20 32s20-17 20-32C40 9 31 0 20 0z" fill="#e74c3c"/>
+            <circle cx="20" cy="19" r="8" fill="#fff"/>
+          </svg>
+          <span>Madison, WI</span>
+        </div>
+      </div>
+      <div class="area-details">
+        <h3>Your Local Energy Experts</h3>
+        <p>Based right here in Madison, Accurate-Airtight Exteriors has been providing building science solutions since 1998. Whether you're a homeowner looking to reduce heating bills or a commercial property manager needing air barrier testing, we bring our expertise directly to you.</p>
+        <div class="area-address">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>3336 Commercial Ave<br>Madison, WI 53714</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CONTACT ════ -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <span class="section-label">Contact Us</span>
+    <h2 class="section-title">Ready to Stop Energy Loss?</h2>
+    <p class="section-subtitle">Take the first step — reach out today and let our professionals discuss how we can increase the performance of your building.</p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3>Call Us</h3>
+        <p>Speak with an energy expert today</p>
+        <a href="tel:+16084672008" class="contact-link">(608) 467-2008</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>Email Us</h3>
+        <p>We'll respond within one business day</p>
+        <a href="mailto:info@accurateairtight.com" class="contact-link">Send Email →</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Visit Us</h3>
+        <p>3336 Commercial Ave, Madison, WI 53714</p>
+        <a href="https://maps.google.com/?q=3336+Commercial+Ave+Madison+WI+53714" target="_blank" rel="noopener" class="contact-link">Get Directions →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<footer class="footer">
+  <div style="max-width:var(--max-width);margin:0 auto;">
+    <strong>Accurate-Airtight Exteriors</strong><br>
+    3336 Commercial Ave, Madison, WI 53714 · <a href="tel:+16084672008">(608) 467-2008</a><br>
+    <span style="margin-top:0.5rem;display:inline-block;">© 2024 Accurate-Airtight Exteriors. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  this.innerHTML = '<div class="form-thanks"><div class="check-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3>Thank You!</h3><p>We\'ll be in touch shortly.</p></div>';
+});
+</script>
+
+</body>
+</html>
