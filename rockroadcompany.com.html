@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Rock Road Company — Wisconsin Spray Foam Insulation Specialists Since 1995</title>
+<style>
+:root {
+  --clr-primary: #1a3a5c;
+  --clr-primary-dark: #0f2640;
+  --clr-accent: #e8a624;
+  --clr-accent-hover: #d4941a;
+  --clr-hero-bg: #102a44;
+  --clr-hero-overlay: rgba(16, 42, 68, 0.92);
+  --clr-white: #ffffff;
+  --clr-off-white: #f5f7fa;
+  --clr-light-gray: #e9ecf0;
+  --clr-medium-gray: #6b7a8d;
+  --clr-dark: #1a1a2e;
+  --clr-card-bg: #ffffff;
+  --clr-success: #2ecc71;
+  --clr-form-bg: #ffffff;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.18);
+  --shadow-xl: 0 20px 60px rgba(0,0,0,0.22);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --font-sans: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --fs-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.85rem);
+  --fs-sm: clamp(0.85rem, 0.8rem + 0.3vw, 0.95rem);
+  --fs-base: clamp(0.95rem, 0.9rem + 0.35vw, 1.05rem);
+  --fs-md: clamp(1.05rem, 0.95rem + 0.5vw, 1.2rem);
+  --fs-lg: clamp(1.2rem, 1rem + 0.8vw, 1.5rem);
+  --fs-xl: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --fs-2xl: clamp(1.8rem, 1.3rem + 2vw, 2.8rem);
+  --fs-3xl: clamp(2.2rem, 1.5rem + 3vw, 3.5rem);
+  --section-pad: clamp(3rem, 5vw, 6rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--clr-dark);
+  background: var(--clr-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* === HEADER === */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--clr-primary-dark);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 0.75rem 1.25rem;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--clr-accent);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-size: var(--fs-md);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.logo-text span {
+  display: block;
+  font-size: var(--fs-xs);
+  font-weight: 400;
+  color: rgba(255,255,255,0.65);
+  letter-spacing: 0.04em;
+}
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--clr-white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  background: rgba(255,255,255,0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: background 0.2s;
+}
+
+.header-phone:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+.header-phone svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* === HERO === */
+.hero {
+  position: relative;
+  background: var(--clr-hero-bg);
+  overflow: hidden;
+  padding: clamp(5rem, 8vw, 7rem) 1.25rem clamp(3rem, 6vw, 5rem);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(232,166,36,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(26,58,92,0.4) 0%, transparent 50%),
+    linear-gradient(180deg, var(--clr-hero-bg) 0%, rgba(15,38,64,0.97) 100%);
+  z-index: 0;
+}
+
+/* Geometric decoration */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -120px;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 60px solid rgba(232,166,36,0.06);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr 420px;
+    gap: 3.5rem;
+  }
+}
+
+/* Hero Left */
+.hero-content {
+  color: var(--clr-white);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(232,166,36,0.15);
+  border: 1px solid rgba(232,166,36,0.3);
+  color: var(--clr-accent);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.9rem;
+  border-radius: 50px;
+  margin-bottom: 1.25rem;
+}
+
+.hero-badge svg {
+  width: 14px;
+  height: 14px;
+}
+
+.hero h1 {
+  font-size: var(--fs-3xl);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.hero h1 .accent {
+  color: var(--clr-accent);
+}
+
+.hero-sub {
+  font-size: var(--fs-md);
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 1.5rem;
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  color: var(--clr-accent);
+  font-size: 1.1rem;
+}
+
+.trust-text {
+  font-size: var(--fs-sm);
+  color: rgba(255,255,255,0.7);
+}
+
+.trust-text strong {
+  color: var(--clr-white);
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--clr-accent);
+  color: var(--clr-primary-dark);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: var(--fs-base);
+  padding: 0.85rem 1.75rem;
+  border-radius: 50px;
+  transition: all 0.25s;
+  box-shadow: 0 4px 20px rgba(232,166,36,0.35);
+}
+
+.hero-cta:hover {
+  background: var(--clr-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 28px rgba(232,166,36,0.45);
+}
+
+.hero-cta svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hero Right — Form Card */
+.form-card {
+  background: var(--clr-form-bg);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+}
+
+.form-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--clr-accent), #f0c050);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.form-title {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--clr-primary-dark);
+  margin-bottom: 0.35rem;
+  text-align: center;
+}
+
+.form-subtitle {
+  font-size: var(--fs-sm);
+  color: var(--clr-medium-gray);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--clr-primary);
+  margin-bottom: 0.3rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 2px solid var(--clr-light-gray);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-base);
+  font-family: var(--font-sans);
+  transition: border-color 0.2s;
+  background: var(--clr-off-white);
+  color: var(--clr-dark);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--clr-accent);
+  background: var(--clr-white);
+}
+
+.form-group input::placeholder {
+  color: #a0aab4;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 0.85rem;
+  background: var(--clr-accent);
+  color: var(--clr-primary-dark);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-md);
+  font-weight: 700;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: all 0.25s;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 16px rgba(232,166,36,0.3);
+}
+
+.form-submit:hover {
+  background: var(--clr-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px rgba(232,166,36,0.4);
+}
+
+.form-privacy {
+  font-size: var(--fs-xs);
+  color: var(--clr-medium-gray);
+  text-align: center;
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.form-success {
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.form-success .check-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(46,204,113,0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--clr-success);
+}
+
+.form-success h3 {
+  font-size: var(--fs-lg);
+  color: var(--clr-primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.form-success p {
+  font-size: var(--fs-sm);
+  color: var(--clr-medium-gray);
+}
+
+/* === SECTIONS COMMON === */
+.section {
+  padding: var(--section-pad) 1.25rem;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--clr-accent);
+  margin-bottom: 0.75rem;
+}
+
+.section-label::before {
+  content: '';
+  width: 24px;
+  height: 3px;
+  background: var(--clr-accent);
+  border-radius: 2px;
+}
+
+.section-title {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--clr-primary-dark);
+  margin-bottom: 0.5rem;
+  line-height: 1.15;
+}
+
+.section-desc {
+  font-size: var(--fs-md);
+  color: var(--clr-medium-gray);
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+}
+
+/* === SERVICES === */
+.services-section {
+  background: var(--clr-off-white);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  background: var(--clr-card-bg);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0,0,0,0.04);
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent));
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.service-icon.blue {
+  background: rgba(26,58,92,0.1);
+  color: var(--clr-primary);
+}
+
+.service-icon.gold {
+  background: rgba(232,166,36,0.12);
+  color: var(--clr-accent-hover);
+}
+
+.service-icon.teal {
+  background: rgba(0,150,136,0.1);
+  color: #00897b;
+}
+
+.service-card h3 {
+  font-size: var(--fs-md);
+  font-weight: 700;
+  color: var(--clr-primary-dark);
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+}
+
+.service-card p {
+  font-size: var(--fs-sm);
+  color: var(--clr-medium-gray);
+  line-height: 1.55;
+}
+
+/* === TRUST BAR === */
+.trust-section {
+  background: var(--clr-primary-dark);
+  color: var(--clr-white);
+  text-align: center;
+}
+
+.trust-section .section-label {
+  color: var(--clr-accent);
+  justify-content: center;
+}
+
+.trust-section .section-label::before {
+  background: var(--clr-accent);
+}
+
+.trust-section .section-title {
+  color: var(--clr-white);
+}
+
+.trust-section .section-desc {
+  color: rgba(255,255,255,0.65);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trust-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .trust-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.trust-stat {
+  padding: 1.75rem 1rem;
+  background: rgba(255,255,255,0.06);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.trust-stat .stat-number {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  color: var(--clr-accent);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.trust-stat .stat-label {
+  font-size: var(--fs-sm);
+  color: rgba(255,255,255,0.7);
+}
+
+.google-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.75rem;
+  margin-top: 2rem;
+}
+
+.google-badge .g-icon {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.g-icon .g-blue { color: #4285f4; }
+.g-icon .g-red { color: #ea4335; }
+.g-icon .g-yellow { color: #fbbc05; }
+.g-icon .g-green { color: #34a853; }
+
+.google-badge .g-info {
+  text-align: left;
+}
+
+.google-badge .g-rating {
+  font-weight: 700;
+  font-size: var(--fs-md);
+}
+
+.google-badge .g-reviews {
+  font-size: var(--fs-xs);
+  color: rgba(255,255,255,0.6);
+}
+
+/* === SERVICE AREA === */
+.area-section {
+  background: var(--clr-white);
+}
+
+.area-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 700px) {
+  .area-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.area-map-placeholder {
+  background: linear-gradient(135deg, #dce6f0 0%, #c5d4e3 100%);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.area-map-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(26,58,92,0.1) 0%, transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(232,166,36,0.08) 0%, transparent 35%);
+}
+
+.map-pin {
+  position: relative;
+  z-index: 1;
+  font-size: 3rem;
+  color: var(--clr-primary);
+  margin-bottom: 0.75rem;
+}
+
+.area-map-placeholder h3 {
+  position: relative;
+  z-index: 1;
+  font-size: var(--fs-lg);
+  color: var(--clr-primary-dark);
+  margin-bottom: 0.25rem;
+}
+
+.area-map-placeholder p {
+  position: relative;
+  z-index: 1;
+  font-size: var(--fs-sm);
+  color: var(--clr-medium-gray);
+}
+
+.area-regions h3 {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--clr-primary-dark);
+  margin-bottom: 1rem;
+}
+
+.region-group {
+  margin-bottom: 1.25rem;
+}
+
+.region-group h4 {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--clr-primary);
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.region-group p {
+  font-size: var(--fs-sm);
+  color: var(--clr-medium-gray);
+  line-height: 1.55;
+  padding-left: 1.4rem;
+}
+
+/* === CONTACT === */
+.contact-section {
+  background: var(--clr-off-white);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact-card {
+  background: var(--clr-white);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.contact-card .c-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(26,58,92,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--clr-primary);
+  font-size: 1.3rem;
+}
+
+.contact-card h3 {
+  font-size: var(--fs-md);
+  font-weight: 700;
+  color: var(--clr-primary-dark);
+  margin-bottom: 0.35rem;
+}
+
+.contact-card p {
+  font-size: var(--fs-sm);
+  color: var(--clr-medium-gray);
+  line-height: 1.5;
+}
+
+.contact-card a {
+  color: var(--clr-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.contact-card a:hover {
+  color: var(--clr-accent-hover);
+}
+
+/* === FOOTER === */
+.site-footer {
+  background: var(--clr-primary-dark);
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+  font-size: var(--fs-sm);
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--clr-white);
+  margin-bottom: 0.5rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--clr-accent);
+}
+
+.footer-copy {
+  margin-top: 1rem;
+  font-size: var(--fs-xs);
+  color: rgba(255,255,255,0.4);
+}
+
+/* === CREDENTIAL BANNER === */
+.credential-banner {
+  background: linear-gradient(90deg, var(--clr-primary), var(--clr-primary-dark));
+  text-align: center;
+  padding: 0.75rem 1.25rem;
+  font-size: var(--fs-xs);
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.02em;
+}
+
+.credential-banner strong {
+  color: var(--clr-accent);
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div class="logo-text">
+        Rock Road Company
+        <span>Spray Foam Insulation</span>
+      </div>
+    </a>
+    <a href="tel:+19207571050" class="header-phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (920) 757-1050
+    </a>
+  </div>
+</header>
+
+<!-- Credential Banner -->
+<div class="credential-banner">
+  Licensed Wisconsin Building Contractor · <strong>Credential ID: DCQ-071200018</strong> · Family-Owned Since 1995
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner">
+    <!-- Left column -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Wisconsin's Spray Foam Specialists
+      </div>
+      <h1>Premium <span class="accent">Spray Foam</span> Insulation Done Right</h1>
+      <p class="hero-sub">Licensed building contractors with three decades of structural construction expertise. We know how buildings work — from the inside out.</p>
+      <div class="hero-trust">
+        <div class="stars">★★★★★</div>
+        <span class="trust-text"><strong>5.0</strong> rating · <strong>28</strong> Google Reviews</span>
+      </div>
+      <a href="tel:+19207571050" class="hero-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call (920) 757-1050
+      </a>
+    </div>
+
+    <!-- Right column — Lead form -->
+    <div class="form-card">
+      <form id="leadForm">
+        <h2 class="form-title">Get Your Free Quote</h2>
+        <p class="form-subtitle">Tell us about your project — we'll respond fast.</p>
+        <div class="form-group">
+          <label for="formName">Full Name</label>
+          <input type="text" id="formName" placeholder="John Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="formPhone">Phone Number</label>
+          <input type="tel" id="formPhone" placeholder="(555) 123-4567" required>
+        </div>
+        <div class="form-group">
+          <label for="formEmail">Email Address</label>
+          <input type="email" id="formEmail" placeholder="john@example.com" required>
+        </div>
+        <button type="submit" class="form-submit">Get My Free Quote →</button>
+        <p class="form-privacy">🔒 Your information is private and secure.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section services-section" id="services">
+  <div class="section-inner">
+    <div class="section-label">Our Services</div>
+    <h2 class="section-title">Spray Foam Solutions for Every Application</h2>
+    <p class="section-desc">From residential retrofits to large-scale commercial builds — backed by structural expertise most insulation contractors simply don't have.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon blue">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+        </div>
+        <h3>Closed-Cell Spray Foam</h3>
+        <p>High R-value thermal performance with structural reinforcement and moisture barriers. Ideal for exterior walls, pole sheds, commercial builds, and heavy-duty environments.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon gold">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <h3>Open-Cell Spray Foam</h3>
+        <p>High-efficiency application optimized for interior walls, floor assemblies, and advanced sound-deadening between rooms or multi-unit buildings.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon teal">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Pour Foam — Existing Walls</h3>
+        <p>Specialized "drill and fill" closed-cell pour foam injected into finished walls — drywall, plaster, and concrete block — without tearing them down. Very few contractors offer this.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon gold">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Attic &amp; Crawlspace Retrofits</h3>
+        <p>Specialized remediation to stop energy loss where it happens most. Seal up older or poorly insulated homes to slash energy bills and eliminate drafts.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon blue">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h3>Commercial &amp; Agricultural</h3>
+        <p>Large-scale spray foam insulation for commercial buildings, pole sheds, barns, and agricultural structures across Wisconsin.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon teal">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Advanced Project Capabilities</h3>
+        <p>Three decades in the trades means our crew understands the full anatomy of a building — with specialized skills and equipment for structural and construction needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Section -->
+<section class="section trust-section" id="trust">
+  <div class="section-inner">
+    <div class="section-label">Why Choose Us</div>
+    <h2 class="section-title">Built on Reputation, Driven by Results</h2>
+    <p class="section-desc">Our business has been built entirely on word-of-mouth — a family-owned company with deep roots in structural construction.</p>
+
+    <div class="trust-stats">
+      <div class="trust-stat">
+        <span class="stat-number">5.0 ★</span>
+        <span class="stat-label">Google Rating</span>
+      </div>
+      <div class="trust-stat">
+        <span class="stat-number">28</span>
+        <span class="stat-label">Verified Reviews</span>
+      </div>
+      <div class="trust-stat">
+        <span class="stat-number">Since '95</span>
+        <span class="stat-label">Quality Craftsmanship</span>
+      </div>
+    </div>
+
+    <div class="google-badge">
+      <span class="g-icon"><span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span></span>
+      <div class="g-info">
+        <div class="g-rating">★★★★★ 5.0</div>
+        <div class="g-reviews">Based on 28 reviews</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service Area -->
+<section class="section area-section" id="area">
+  <div class="section-inner">
+    <div class="section-label">Service Area</div>
+    <h2 class="section-title">Statewide Across Wisconsin</h2>
+    <p class="section-desc">Based in Weyauwega, we travel wherever high-quality work is needed — from the Northwoods to the Illinois border.</p>
+
+    <div class="area-content">
+      <div class="area-map-placeholder">
+        <div class="map-pin">📍</div>
+        <h3>Weyauwega, WI</h3>
+        <p>E5917 Haffner Rd, Ste. A<br>Weyauwega, WI 54983</p>
+      </div>
+
+      <div class="area-regions">
+        <h3>Areas We Regularly Serve</h3>
+
+        <div class="region-group">
+          <h4>📍 Central &amp; Northern Wisconsin</h4>
+          <p>Wausau, Stevens Point, Wisconsin Rapids, Black River Falls, Clam Lake, Florence</p>
+        </div>
+
+        <div class="region-group">
+          <h4>📍 Fox Valley &amp; Green Bay</h4>
+          <p>Green Bay, Oshkosh, Appleton, Chilton, Sheboygan, Baileys Harbor</p>
+        </div>
+
+        <div class="region-group">
+          <h4>📍 Southern &amp; Eastern Wisconsin</h4>
+          <p>Madison, Milwaukee, Janesville, and surrounding communities</p>
+        </div>
+
+        <div class="region-group">
+          <h4>📍 Statewide Coverage</h4>
+          <p>Not limited to any single county — we serve customers across all of Wisconsin.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Ready to Start Your Project?</h2>
+    <p class="section-desc">Reach out for a free consultation. We're responsive, straightforward, and easy to work with.</p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="c-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3>Call Us</h3>
+        <p><a href="tel:+19207571050">(920) 757-1050</a></p>
+      </div>
+
+      <div class="contact-card">
+        <div class="c-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Visit Us</h3>
+        <p>E5917 Haffner Rd, Ste. A<br>Weyauwega, WI 54983</p>
+      </div>
+
+      <div class="contact-card">
+        <div class="c-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>Email</h3>
+        <p><a href="mailto:info@rockroadcompany.com">info@rockroadcompany.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">Rock Road Company</div>
+    <p>Wisconsin's Spray Foam Insulation Specialists</p>
+    <div class="footer-links">
+      <a href="tel:+19207571050">(920) 757-1050</a>
+      <a href="mailto:info@rockroadcompany.com">Email Us</a>
+      <a href="#services">Services</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">Licensed WI Building Contractor · Credential ID: DCQ-071200018</p>
+    <p class="footer-copy">© 2025 Rock Road Company. All rights reserved. · Weyauwega, WI</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  this.innerHTML = '<div class="form-success"><div class="check-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3>Thanks!</h3><p>We\'ll be in touch shortly.</p></div>';
+});
+</script>
+
+</body>
+</html>
