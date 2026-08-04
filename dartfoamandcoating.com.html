@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Dart Foam And Coatings LLC — Spray Foam Insulation | Luxemburg, WI</title>
+<style>
+:root {
+  --color-primary: #1B5E3A;
+  --color-primary-dark: #134229;
+  --color-primary-light: #2E8B57;
+  --color-accent: #E8A824;
+  --color-accent-hover: #D4961E;
+  --color-bg: #FAFAF7;
+  --color-white: #FFFFFF;
+  --color-dark: #1A1A1A;
+  --color-text: #3A3A3A;
+  --color-text-light: #6B6B6B;
+  --color-border: #E0E0D8;
+  --color-card: #FFFFFF;
+  --color-hero-bg: #0F3D24;
+  --color-hero-overlay: rgba(15, 61, 36, 0.92);
+  --color-section-alt: #F0F0EA;
+  --color-star: #F5B400;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.18);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --font-sans: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --max-width: 1200px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Fluid Typography */
+h1 { font-size: clamp(1.8rem, 4vw + 0.5rem, 3.2rem); }
+h2 { font-size: clamp(1.5rem, 3vw + 0.3rem, 2.4rem); }
+h3 { font-size: clamp(1.1rem, 2vw + 0.2rem, 1.5rem); }
+p, li { font-size: clamp(0.95rem, 1.2vw + 0.2rem, 1.1rem); }
+
+/* STICKY HEADER */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--color-primary-dark);
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-weight: 800;
+  font-size: clamp(0.9rem, 1.5vw + 0.2rem, 1.15rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.logo-text span {
+  display: block;
+  font-weight: 500;
+  font-size: 0.72em;
+  color: var(--color-text-light);
+  letter-spacing: 0.03em;
+}
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 0.55rem 1.1rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.header-phone:hover {
+  background: var(--color-primary-dark);
+}
+
+.header-phone svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--color-hero-bg) 0%, #1a5c3a 40%, #0d2e1a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 80%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(46,139,87,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to top, rgba(15,61,36,0.3), transparent);
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 4rem) 1.25rem clamp(3rem, 6vw, 5rem);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1.15fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+}
+
+.hero-content {
+  color: var(--color-white);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  margin-bottom: 1.25rem;
+  backdrop-filter: blur(4px);
+}
+
+.hero-badge svg {
+  width: 14px;
+  height: 14px;
+  fill: var(--color-accent);
+}
+
+.hero h1 {
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+.hero-subhead {
+  font-size: clamp(1rem, 1.5vw + 0.2rem, 1.2rem);
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.hero-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.stars-visual {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  color: var(--color-star);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.stars-text {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  font-weight: 500;
+}
+
+.stars-text strong {
+  color: var(--color-white);
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-accent);
+  color: var(--color-dark);
+  text-decoration: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 16px rgba(232,168,36,0.3);
+}
+
+.hero-cta:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-1px);
+}
+
+.hero-cta svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* LEAD FORM CARD */
+.lead-form-card {
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  position: relative;
+}
+
+.lead-form-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.form-title {
+  color: var(--color-dark);
+  font-size: clamp(1.15rem, 1.8vw + 0.2rem, 1.4rem);
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+.form-subtitle {
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.form-group {
+  margin-bottom: 0.85rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-dark);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(27,94,58,0.1);
+}
+
+.form-group input::placeholder {
+  color: #B0B0A8;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 0.85rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  margin-top: 0.4rem;
+  letter-spacing: 0.01em;
+}
+
+.form-submit:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.form-note {
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--color-text-light);
+  margin-top: 0.65rem;
+}
+
+.form-note svg {
+  width: 11px;
+  height: 11px;
+  fill: var(--color-text-light);
+  vertical-align: -1px;
+  margin-right: 2px;
+}
+
+.form-confirmation {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.form-confirmation .check-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.form-confirmation .check-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--color-white);
+}
+
+.form-confirmation h3 {
+  color: var(--color-dark);
+  margin-bottom: 0.5rem;
+}
+
+.form-confirmation p {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
+
+/* SECTIONS */
+.section {
+  padding: clamp(3rem, 6vw, 5rem) 1.25rem;
+}
+
+.section-alt {
+  background: var(--color-section-alt);
+}
+
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.section-header .eyebrow {
+  display: inline-block;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.section-header h2 {
+  font-weight: 800;
+  color: var(--color-dark);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.6rem;
+}
+
+.section-header p {
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* SERVICES GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, rgba(27,94,58,0.1), rgba(46,139,87,0.08));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.service-card h3 {
+  color: var(--color-dark);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+/* TRUST BAR */
+.trust-bar {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  color: var(--color-white);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .trust-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.trust-item {
+  padding: 1rem;
+}
+
+.trust-number {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+.trust-number .star-inline {
+  color: var(--color-star);
+}
+
+.trust-label {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  font-weight: 500;
+}
+
+/* SERVICE AREA */
+.area-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .area-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.area-map-placeholder {
+  background: linear-gradient(135deg, rgba(27,94,58,0.08), rgba(46,139,87,0.04));
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+}
+
+.area-map-placeholder .pin-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.area-map-placeholder p {
+  color: var(--color-text-light);
+  font-weight: 600;
+}
+
+.area-details h3 {
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+
+.area-details p {
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.area-details .address-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  color: var(--color-text);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.area-details .address-line svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* CONTACT / CTA SECTION */
+.contact-section {
+  background: var(--color-dark);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.contact-section .section-header .eyebrow {
+  color: var(--color-accent);
+}
+
+.contact-section .section-header h2 {
+  color: var(--color-white);
+}
+
+.contact-section .section-header p {
+  color: rgba(255,255,255,0.65);
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .contact-methods {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+}
+
+.contact-link svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.contact-link-phone {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  box-shadow: 0 4px 16px rgba(232,168,36,0.3);
+}
+
+.contact-link-email {
+  background: rgba(255,255,255,0.1);
+  color: var(--color-white);
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.contact-link-email:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* FOOTER */
+.site-footer {
+  background: #111;
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+  padding: 2rem 1.25rem;
+  font-size: 0.8rem;
+}
+
+.site-footer a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--color-white);
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.footer-business {
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 0.25rem;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo" onclick="return false;">
+      <div class="logo-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+      </div>
+      <div class="logo-text">
+        Dart Foam &amp; Coatings
+        <span>Spray Foam Insulation</span>
+      </div>
+    </a>
+    <a href="tel:+19206809585" class="header-phone">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+      (920) 680-9585
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01z"/></svg>
+        Luxemburg, WI &amp; Surrounding Areas
+      </div>
+      <h1>Professional<br><em>Spray Foam</em> Insulation</h1>
+      <p class="hero-subhead">Improve your home's energy efficiency, comfort, and value with expert spray foam insulation and coating services.</p>
+      <div class="hero-stars">
+        <div class="stars-visual">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+        <span class="stars-text"><strong>5.0</strong> rating · 7 Google Reviews</span>
+      </div>
+      <a href="tel:+19206809585" class="hero-cta">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+        Call Now — Free Estimate
+      </a>
+    </div>
+    <div class="lead-form-card" id="leadFormCard">
+      <form id="leadForm">
+        <h3 class="form-title">Get Your Free Quote</h3>
+        <p class="form-subtitle">Fill out the form and we'll get back to you quickly.</p>
+        <div class="form-group">
+          <label for="fname">Your Name</label>
+          <input type="text" id="fname" placeholder="John Smith" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="fphone">Phone Number</label>
+          <input type="tel" id="fphone" placeholder="(920) 555-1234" required autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label for="femail">Email Address</label>
+          <input type="email" id="femail" placeholder="john@example.com" required autocomplete="email">
+        </div>
+        <button type="submit" class="form-submit">Get My Free Quote →</button>
+        <p class="form-note">
+          <svg viewBox="0 0 24 24"><path d="M18 8h-1V6A5 5 0 007 6v2H6a2 2 0 00-2 2v10c0 1.1.9 2 2 2h12a2 2 0 002-2V10a2 2 0 00-2-2zm-6 9a2 2 0 110-4 2 2 0 010 4zM9 8V6a3 3 0 016 0v2H9z"/></svg>
+          Your information is private and never shared.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="eyebrow">What We Do</span>
+      <h2>Our Insulation Services</h2>
+      <p>We provide reliable spray foam insulation and coating solutions for residential and commercial properties.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Residential Spray Foam</h3>
+        <p>Keep your home comfortable year-round with spray foam insulation for attics, walls, crawl spaces, and basements.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏗️</div>
+        <h3>Commercial Insulation</h3>
+        <p>Energy-efficient insulation solutions for commercial buildings, pole barns, warehouses, and new construction projects.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔒</div>
+        <h3>Closed-Cell Foam</h3>
+        <p>High-density closed-cell spray foam for superior insulation value, structural rigidity, and moisture resistance.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌬️</div>
+        <h3>Open-Cell Foam</h3>
+        <p>Cost-effective open-cell spray foam for excellent air sealing and sound dampening in interior applications.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛡️</div>
+        <h3>Protective Coatings</h3>
+        <p>Durable protective coating applications to extend the life and performance of your surfaces and structures.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📋</div>
+        <h3>Free Estimates</h3>
+        <p>We'll assess your property and provide a detailed, no-obligation estimate tailored to your insulation needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="section trust-bar" id="reviews">
+  <div class="section-inner">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-number"><span class="star-inline">★</span> 5.0</div>
+        <div class="trust-label">Google Rating</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">7</div>
+        <div class="trust-label">Verified Google Reviews</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">100%</div>
+        <div class="trust-label">5-Star Reviews</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section section-alt" id="area">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="eyebrow">Service Area</span>
+      <h2>Proudly Serving Luxemburg, WI &amp; Beyond</h2>
+      <p>Locally based and committed to providing quality spray foam insulation to our community.</p>
+    </div>
+    <div class="area-content">
+      <div class="area-map-placeholder">
+        <div class="pin-icon">📍</div>
+        <p>Luxemburg, Wisconsin</p>
+        <p style="font-weight:400; font-size:0.85rem; margin-top:0.25rem;">& Surrounding Communities</p>
+      </div>
+      <div class="area-details">
+        <h3>Locally Owned &amp; Operated</h3>
+        <p>Dart Foam And Coatings LLC is based right here in Luxemburg, Wisconsin. We're proud to serve homeowners and businesses throughout Kewaunee County and the surrounding areas.</p>
+        <p>Whether you're building new or upgrading an existing structure, we're here to help improve your property's insulation performance.</p>
+        <div class="address-line">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+          <span>6150 Luxemburg Rd, Luxemburg, WI 54217</span>
+        </div>
+        <div class="address-line">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+          <a href="tel:+19206809585" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">(920) 680-9585</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / CTA -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="eyebrow">Get Started</span>
+      <h2>Ready to Improve Your Insulation?</h2>
+      <p>Contact us today for a free, no-obligation estimate on your spray foam insulation project.</p>
+    </div>
+    <div class="contact-methods">
+      <a href="tel:+19206809585" class="contact-link contact-link-phone">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+        (920) 680-9585
+      </a>
+      <a href="mailto:info@dartfoamandcoatings.com" class="contact-link contact-link-email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Send an Email
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-business">Dart Foam And Coatings LLC</p>
+    <p>6150 Luxemburg Rd, Luxemburg, WI 54217 · <a href="tel:+19206809585">(920) 680-9585</a></p>
+    <p style="margin-top: 0.75rem;">© 2024 Dart Foam And Coatings LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var card = document.getElementById('leadFormCard');
+  card.innerHTML = '<div class="form-confirmation">' +
+    '<div class="check-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>' +
+    '<h3>Thank You!</h3>' +
+    '<p>We\'ll be in touch shortly to discuss your project.</p>' +
+    '</div>';
+});
+</script>
+
+</body>
+</html>
